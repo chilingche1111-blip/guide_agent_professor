@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-01T09:11:39.981Z",
+  "checks": [
+    "Local WebGL scene and 12 knowledge documents loaded",
+    "Clicking the actual 3D building uses ray picking",
+    "Camera rotation changes actual scene",
+    "Pointer drag rotates the 3D camera",
+    "Camera zoom control",
+    "Destination focuses camera and exposes real source document",
+    "Escape returns to campus and restores navigation",
+    "Day/night control changes page and renderer lighting",
+    "Knowledge filtering and empty state",
+    "Assistant performs real local RAG request with citations",
+    "Four responsive widths, mobile destination flow, no horizontal overflow",
+    "Reduced motion initializes paused",
+    "Continuous scene animation runs and pause freezes scene time",
+    "Unavailable 3D falls back to functional service navigation",
+    "Original workbench and model configuration remain reachable",
+    "No uncaught browser JavaScript errors"
+  ],
+  "errors": []
+}

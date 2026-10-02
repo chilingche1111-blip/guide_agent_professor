@@ -2,6 +2,10 @@
 **/__pycache__/
 *.py[cod]
 **/.venv/
+**/.venv-semantic/
+**/.model-cache/
 **/.env
 **/*.log
-
+**/data/*.db
+**/data/*.db-*
+**/data/*.sqlite*

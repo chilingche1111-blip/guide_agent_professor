@@ -1,0 +1,17 @@
+{
+  "executed_at": "2026-10-01T12:17:31.396Z",
+  "checks": [
+    "Requested campus CTA enters the real WebGL ion assistant without blocking input",
+    "Pointer drag and keyboard arrows rotate the 3D core",
+    "Pause stops the render loop; resume starts it again",
+    "Leaving stops hidden rendering and preserves unsent drafts on return",
+    "Knowledge view suspends the 3D scene",
+    "Real RAG request drives processing/ready state and compacts the core beside conversation",
+    "Reduced motion uses a static WebGL pose without an animation loop",
+    "390px mobile reduces particle count, preserves controls and has no horizontal overflow",
+    "No-WebGL standalone route retains a labelled static core and working composer",
+    "No uncaught JavaScript or shader compile errors"
+  ],
+  "errors": [],
+  "scope": "Headless Chrome functional checks; not a physical-device FPS or live model-quality benchmark"
+}

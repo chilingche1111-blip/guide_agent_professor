@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T12:28:09.286Z",
+  "title": "Design System: 长安知行 · 智慧校园 AI 助手",
+  "extensions": {
+    "colorMeta": {
+      "sky": {
+        "role": "neutral",
+        "displayName": "Sky",
+        "tonalRamp": [
+          "oklch(15% 0.0167 250.8)",
+          "oklch(26% 0.0167 250.8)",
+          "oklch(38% 0.0167 250.8)",
+          "oklch(49% 0.0167 250.8)",
+          "oklch(61% 0.0167 250.8)",
+          "oklch(72% 0.0167 250.8)",
+          "oklch(84% 0.0167 250.8)",
+          "oklch(95% 0.0167 250.8)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0503 251.9)",
+          "oklch(26% 0.0503 251.9)",
+          "oklch(38% 0.0503 251.9)",
+          "oklch(49% 0.0503 251.9)",
+          "oklch(61% 0.0503 251.9)",
+          "oklch(72% 0.0503 251.9)",
+          "oklch(84% 0.0503 251.9)",
+          "oklch(95% 0.0503 251.9)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0524 250.0)",
+          "oklch(26% 0.0524 250.0)",
+          "oklch(38% 0.0524 250.0)",
+          "oklch(49% 0.0524 250.0)",
+          "oklch(61% 0.0524 250.0)",
+          "oklch(72% 0.0524 250.0)",
+          "oklch(84% 0.0524 250.0)",
+          "oklch(95% 0.0524 250.0)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0062 255.5)",
+          "oklch(26% 0.0062 255.5)",
+          "oklch(38% 0.0062 255.5)",
+          "oklch(49% 0.0062 255.5)",
+          "oklch(61% 0.0062 255.5)",
+          "oklch(72% 0.0062 255.5)",
+          "oklch(84% 0.0062 255.5)",
+          "oklch(95% 0.0062 255.5)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0322 254.4)",
+          "oklch(26% 0.0322 254.4)",
+          "oklch(38% 0.0322 254.4)",
+          "oklch(49% 0.0322 254.4)",
+          "oklch(61% 0.0322 254.4)",
+          "oklch(72% 0.0322 254.4)",
+          "oklch(84% 0.0322 254.4)",
+          "oklch(95% 0.0322 254.4)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15% 0.1398 262.4)",
+          "oklch(26% 0.1398 262.4)",
+          "oklch(38% 0.1398 262.4)",
+          "oklch(49% 0.1398 262.4)",
+          "oklch(61% 0.1398 262.4)",
+          "oklch(72% 0.1398 262.4)",
+          "oklch(84% 0.1398 262.4)",
+          "oklch(95% 0.1398 262.4)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Accent Hover",
+        "tonalRamp": [
+          "oklch(15% 0.1763 263.2)",
+          "oklch(26% 0.1763 263.2)",
+          "oklch(38% 0.1763 263.2)",
+          "oklch(49% 0.1763 263.2)",
+          "oklch(61% 0.1763 263.2)",
+          "oklch(72% 0.1763 263.2)",
+          "oklch(84% 0.1763 263.2)",
+          "oklch(95% 0.1763 263.2)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.1162 77.5)",
+          "oklch(26% 0.1162 77.5)",
+          "oklch(38% 0.1162 77.5)",
+          "oklch(49% 0.1162 77.5)",
+          "oklch(61% 0.1162 77.5)",
+          "oklch(72% 0.1162 77.5)",
+          "oklch(84% 0.1162 77.5)",
+          "oklch(95% 0.1162 77.5)"
+        ]
+      },
+      "night-sky": {
+        "role": "neutral",
+        "displayName": "Night Sky",
+        "tonalRamp": [
+          "oklch(15% 0.0467 253.4)",
+          "oklch(26% 0.0467 253.4)",
+          "oklch(38% 0.0467 253.4)",
+          "oklch(49% 0.0467 253.4)",
+          "oklch(61% 0.0467 253.4)",
+          "oklch(72% 0.0467 253.4)",
+          "oklch(84% 0.0467 253.4)",
+          "oklch(95% 0.0467 253.4)"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0074 260.7)",
+          "oklch(26% 0.0074 260.7)",
+          "oklch(38% 0.0074 260.7)",
+          "oklch(49% 0.0074 260.7)",
+          "oklch(61% 0.0074 260.7)",
+          "oklch(72% 0.0074 260.7)",
+          "oklch(84% 0.0074 260.7)",
+          "oklch(95% 0.0074 260.7)"
+        ]
+      },
+      "night-muted": {
+        "role": "neutral",
+        "displayName": "Night Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0330 249.7)",
+          "oklch(26% 0.0330 249.7)",
+          "oklch(38% 0.0330 249.7)",
+          "oklch(49% 0.0330 249.7)",
+          "oklch(61% 0.0330 249.7)",
+          "oklch(72% 0.0330 249.7)",
+          "oklch(84% 0.0330 249.7)",
+          "oklch(95% 0.0330 249.7)"
+        ]
+      },
+      "night-paper": {
+        "role": "neutral",
+        "displayName": "Night Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0524 251.9)",
+          "oklch(26% 0.0524 251.9)",
+          "oklch(38% 0.0524 251.9)",
+          "oklch(49% 0.0524 251.9)",
+          "oklch(61% 0.0524 251.9)",
+          "oklch(72% 0.0524 251.9)",
+          "oklch(84% 0.0524 251.9)",
+          "oklch(95% 0.0524 251.9)"
+        ]
+      },
+      "night-line": {
+        "role": "neutral",
+        "displayName": "Night Line",
+        "tonalRamp": [
+          "oklch(15% 0.0534 249.9)",
+          "oklch(26% 0.0534 249.9)",
+          "oklch(38% 0.0534 249.9)",
+          "oklch(49% 0.0534 249.9)",
+          "oklch(61% 0.0534 249.9)",
+          "oklch(72% 0.0534 249.9)",
+          "oklch(84% 0.0534 249.9)",
+          "oklch(95% 0.0534 249.9)"
+        ]
+      },
+      "night-accent": {
+        "role": "primary",
+        "displayName": "Night Accent",
+        "tonalRamp": [
+          "oklch(15% 0.0541 256.1)",
+          "oklch(26% 0.0541 256.1)",
+          "oklch(38% 0.0541 256.1)",
+          "oklch(49% 0.0541 256.1)",
+          "oklch(61% 0.0541 256.1)",
+          "oklch(72% 0.0541 256.1)",
+          "oklch(84% 0.0541 256.1)",
+          "oklch(95% 0.0541 256.1)"
+        ]
+      },
+      "night-accent-hover": {
+        "role": "primary",
+        "displayName": "Night Accent Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0534 264.3)",
+          "oklch(26% 0.0534 264.3)",
+          "oklch(38% 0.0534 264.3)",
+          "oklch(49% 0.0534 264.3)",
+          "oklch(61% 0.0534 264.3)",
+          "oklch(72% 0.0534 264.3)",
+          "oklch(84% 0.0534 264.3)",
+          "oklch(95% 0.0534 264.3)"
+        ]
+      },
+      "night-action-ink": {
+        "role": "neutral",
+        "displayName": "Night Action Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0449 167.4)",
+          "oklch(26% 0.0449 167.4)",
+          "oklch(38% 0.0449 167.4)",
+          "oklch(49% 0.0449 167.4)",
+          "oklch(61% 0.0449 167.4)",
+          "oklch(72% 0.0449 167.4)",
+          "oklch(84% 0.0449 167.4)",
+          "oklch(95% 0.0449 167.4)"
+        ]
+      },
+      "night-action-hover-ink": {
+        "role": "neutral",
+        "displayName": "Night Action Hover Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0614 254.4)",
+          "oklch(26% 0.0614 254.4)",
+          "oklch(38% 0.0614 254.4)",
+          "oklch(49% 0.0614 254.4)",
+          "oklch(61% 0.0614 254.4)",
+          "oklch(72% 0.0614 254.4)",
+          "oklch(84% 0.0614 254.4)",
+          "oklch(95% 0.0614 254.4)"
+        ]
+      },
+      "ion-ground": {
+        "role": "neutral",
+        "displayName": "Ion Ground",
+        "tonalRamp": [
+          "oklch(15% 0.04 240)",
+          "oklch(26% 0.04 240)",
+          "oklch(38% 0.04 240)",
+          "oklch(49% 0.04 240)",
+          "oklch(61% 0.04 240)",
+          "oklch(72% 0.04 240)",
+          "oklch(84% 0.04 240)",
+          "oklch(95% 0.04 240)"
+        ]
+      },
+      "ion-paper": {
+        "role": "neutral",
+        "displayName": "Ion Paper",
+        "tonalRamp": [
+          "oklch(15% 0.045 240)",
+          "oklch(26% 0.045 240)",
+          "oklch(38% 0.045 240)",
+          "oklch(49% 0.045 240)",
+          "oklch(61% 0.045 240)",
+          "oklch(72% 0.045 240)",
+          "oklch(84% 0.045 240)",
+          "oklch(95% 0.045 240)"
+        ]
+      },
+      "ion-text": {
+        "role": "neutral",
+        "displayName": "Ion Text",
+        "tonalRamp": [
+          "oklch(15% 0.025 230)",
+          "oklch(26% 0.025 230)",
+          "oklch(38% 0.025 230)",
+          "oklch(49% 0.025 230)",
+          "oklch(61% 0.025 230)",
+          "oklch(72% 0.025 230)",
+          "oklch(84% 0.025 230)",
+          "oklch(95% 0.025 230)"
+        ]
+      },
+      "ion-muted": {
+        "role": "neutral",
+        "displayName": "Ion Muted",
+        "tonalRamp": [
+          "oklch(15% 0.045 235)",
+          "oklch(26% 0.045 235)",
+          "oklch(38% 0.045 235)",
+          "oklch(49% 0.045 235)",
+          "oklch(61% 0.045 235)",
+          "oklch(72% 0.045 235)",
+          "oklch(84% 0.045 235)",
+          "oklch(95% 0.045 235)"
+        ]
+      },
+      "ion-line": {
+        "role": "neutral",
+        "displayName": "Ion Line",
+        "tonalRamp": [
+          "oklch(15% 0.06 240)",
+          "oklch(26% 0.06 240)",
+          "oklch(38% 0.06 240)",
+          "oklch(49% 0.06 240)",
+          "oklch(61% 0.06 240)",
+          "oklch(72% 0.06 240)",
+          "oklch(84% 0.06 240)",
+          "oklch(95% 0.06 240)"
+        ]
+      },
+      "ion-accent": {
+        "role": "primary",
+        "displayName": "Ion Accent",
+        "tonalRamp": [
+          "oklch(15% 0.11 220)",
+          "oklch(26% 0.11 220)",
+          "oklch(38% 0.11 220)",
+          "oklch(49% 0.11 220)",
+          "oklch(61% 0.11 220)",
+          "oklch(72% 0.11 220)",
+          "oklch(84% 0.11 220)",
+          "oklch(95% 0.11 220)"
+        ]
+      },
+      "ion-accent-hover": {
+        "role": "primary",
+        "displayName": "Ion Accent Hover",
+        "tonalRamp": [
+          "oklch(15% 0.05 220)",
+          "oklch(26% 0.05 220)",
+          "oklch(38% 0.05 220)",
+          "oklch(49% 0.05 220)",
+          "oklch(61% 0.05 220)",
+          "oklch(72% 0.05 220)",
+          "oklch(84% 0.05 220)",
+          "oklch(95% 0.05 220)"
+        ]
+      },
+      "ion-accent-soft": {
+        "role": "neutral",
+        "displayName": "Ion Accent Soft",
+        "tonalRamp": [
+          "oklch(15% 0.055 235)",
+          "oklch(26% 0.055 235)",
+          "oklch(38% 0.055 235)",
+          "oklch(49% 0.055 235)",
+          "oklch(61% 0.055 235)",
+          "oklch(72% 0.055 235)",
+          "oklch(84% 0.055 235)",
+          "oklch(95% 0.055 235)"
+        ]
+      },
+      "ion-hover": {
+        "role": "neutral",
+        "displayName": "Ion Hover",
+        "tonalRamp": [
+          "oklch(15% 0.06 235)",
+          "oklch(26% 0.06 235)",
+          "oklch(38% 0.06 235)",
+          "oklch(49% 0.06 235)",
+          "oklch(61% 0.06 235)",
+          "oklch(72% 0.06 235)",
+          "oklch(84% 0.06 235)",
+          "oklch(95% 0.06 235)"
+        ]
+      },
+      "ion-ready": {
+        "role": "primary",
+        "displayName": "Ion Ready",
+        "tonalRamp": [
+          "oklch(15% 0.1 220)",
+          "oklch(26% 0.1 220)",
+          "oklch(38% 0.1 220)",
+          "oklch(49% 0.1 220)",
+          "oklch(61% 0.1 220)",
+          "oklch(72% 0.1 220)",
+          "oklch(84% 0.1 220)",
+          "oklch(95% 0.1 220)"
+        ]
+      },
+      "ion-processing": {
+        "role": "secondary",
+        "displayName": "Ion Processing",
+        "tonalRamp": [
+          "oklch(15% 0.09 70)",
+          "oklch(26% 0.09 70)",
+          "oklch(38% 0.09 70)",
+          "oklch(49% 0.09 70)",
+          "oklch(61% 0.09 70)",
+          "oklch(72% 0.09 70)",
+          "oklch(84% 0.09 70)",
+          "oklch(95% 0.09 70)"
+        ]
+      },
+      "ion-send": {
+        "role": "primary",
+        "displayName": "Ion Send",
+        "tonalRamp": [
+          "oklch(15% 0.09 220)",
+          "oklch(26% 0.09 220)",
+          "oklch(38% 0.09 220)",
+          "oklch(49% 0.09 220)",
+          "oklch(61% 0.09 220)",
+          "oklch(72% 0.09 220)",
+          "oklch(84% 0.09 220)",
+          "oklch(95% 0.09 220)"
+        ]
+      },
+      "ion-source": {
+        "role": "neutral",
+        "displayName": "Ion Source",
+        "tonalRamp": [
+          "oklch(15% 0.04 230)",
+          "oklch(26% 0.04 230)",
+          "oklch(38% 0.04 230)",
+          "oklch(49% 0.04 230)",
+          "oklch(61% 0.04 230)",
+          "oklch(72% 0.04 230)",
+          "oklch(84% 0.04 230)",
+          "oklch(95% 0.04 230)"
+        ]
+      },
+      "ion-input-line": {
+        "role": "neutral",
+        "displayName": "Ion Input Line",
+        "tonalRamp": [
+          "oklch(15% 0.065 240)",
+          "oklch(26% 0.065 240)",
+          "oklch(38% 0.065 240)",
+          "oklch(49% 0.065 240)",
+          "oklch(61% 0.065 240)",
+          "oklch(72% 0.065 240)",
+          "oklch(84% 0.065 240)",
+          "oklch(95% 0.065 240)"
+        ]
+      },
+      "ion-fallback-ring": {
+        "role": "primary",
+        "displayName": "Ion Fallback Ring",
+        "tonalRamp": [
+          "oklch(15% 0.09 225)",
+          "oklch(26% 0.09 225)",
+          "oklch(38% 0.09 225)",
+          "oklch(49% 0.09 225)",
+          "oklch(61% 0.09 225)",
+          "oklch(72% 0.09 225)",
+          "oklch(84% 0.09 225)",
+          "oklch(95% 0.09 225)"
+        ]
+      },
+      "ion-fallback-orbit": {
+        "role": "neutral",
+        "displayName": "Ion Fallback Orbit",
+        "tonalRamp": [
+          "oklch(15% 0.07 240)",
+          "oklch(26% 0.07 240)",
+          "oklch(38% 0.07 240)",
+          "oklch(49% 0.07 240)",
+          "oklch(61% 0.07 240)",
+          "oklch(72% 0.07 240)",
+          "oklch(84% 0.07 240)",
+          "oklch(95% 0.07 240)"
+        ]
+      },
+      "ion-orbit-bright": {
+        "role": "primary",
+        "displayName": "Ion Orbit Bright",
+        "tonalRamp": [
+          "oklch(15% 0.12 225)",
+          "oklch(26% 0.12 225)",
+          "oklch(38% 0.12 225)",
+          "oklch(49% 0.12 225)",
+          "oklch(61% 0.12 225)",
+          "oklch(72% 0.12 225)",
+          "oklch(84% 0.12 225)",
+          "oklch(95% 0.12 225)"
+        ]
+      },
+      "ion-orbit-muted": {
+        "role": "neutral",
+        "displayName": "Ion Orbit Muted",
+        "tonalRamp": [
+          "oklch(15% 0.08 240)",
+          "oklch(26% 0.08 240)",
+          "oklch(38% 0.08 240)",
+          "oklch(49% 0.08 240)",
+          "oklch(61% 0.08 240)",
+          "oklch(72% 0.08 240)",
+          "oklch(84% 0.08 240)",
+          "oklch(95% 0.08 240)"
+        ]
+      },
+      "ion-depth-points": {
+        "role": "neutral",
+        "displayName": "Ion Depth Points",
+        "tonalRamp": [
+          "oklch(15% 0.07 230)",
+          "oklch(26% 0.07 230)",
+          "oklch(38% 0.07 230)",
+          "oklch(49% 0.07 230)",
+          "oklch(61% 0.07 230)",
+          "oklch(72% 0.07 230)",
+          "oklch(84% 0.07 230)",
+          "oklch(95% 0.07 230)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Chinese Photo Title",
+        "purpose": "Local Campus Noto subset face supplies fixed Chinese headings; requested CSS weight 500 uses the available 600 face."
+      },
+      "headline": {
+        "displayName": "Map Chapter Title",
+        "purpose": "Chinese chapter title, with a 26px mobile override."
+      },
+      "body": {
+        "displayName": "Campus Body",
+        "purpose": "Native Chinese body stack for explanations and service content."
+      },
+      "label": {
+        "displayName": "Latin Place Label",
+        "purpose": "Locally hosted Urbanist at weight 600."
+      },
+      "ion-headline": {
+        "displayName": "Ion Greeting",
+        "purpose": "Inherited workbench Inter/system stack; two-line greeting, 30px at 760px, hidden during conversation."
+      },
+      "ion-body": {
+        "displayName": "Ion Supporting Copy",
+        "purpose": "14px explanatory copy with a 30ch maximum; mobile model copy is 12px."
+      },
+      "ion-label": {
+        "displayName": "Ion Controls",
+        "purpose": "12px motion controls; compact conversation control text and mobile hint are 11px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "map-label",
+        "value": "0 4px 12px #0002",
+        "purpose": "Fine locating depth over the architectural model."
+      },
+      {
+        "name": "map-results",
+        "value": "0 12px 32px #142e5026",
+        "purpose": "Search results over the scene."
+      },
+      {
+        "name": "assistant-panel",
+        "value": "0 20px 80px #153f4555",
+        "purpose": "Retained lightweight assistant drawer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "photo-curtain",
+        "value": "600ms cubic-bezier(0.22,1,0.36,1)",
+        "purpose": "translate3d moves the opening photograph off the preserved model."
+      },
+      {
+        "name": "directory-reveal",
+        "value": "500ms cubic-bezier(0.16,1,0.3,1)",
+        "purpose": "Native viewport-sized dialog uses clip-path reveal."
+      },
+      {
+        "name": "place-panel",
+        "value": "400ms, 320ms initial delay",
+        "purpose": "Unboxed landmark title and Agent action arrive after the model-to-photo cut."
+      },
+      {
+        "name": "camera-convergence",
+        "value": "1 - Math.exp(-dt * 11)",
+        "purpose": "requestAnimationFrame while camera moves; no fixed 30fps throttle or continuous idle drawing."
+      },
+      {
+        "name": "agent-navigation",
+        "value": "300ms entrance / 240ms return",
+        "purpose": "Persistent same-document live layers, reversible, draft continuity."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "Direct transitions; scene paused by default",
+        "purpose": "Explicit scene-motion controls remain available."
+      },
+      {
+        "name": "landmark-match-cut",
+        "value": "760ms + 100ms overlap delay; 620ms photo-to-photo; 420ms return",
+        "purpose": "Decoded image pair crossfades into full-background photo while camera approaches; versioned cancellation and saved-pose restoration; direct reduced-motion alternative."
+      },
+      {
+        "name": "ion-gathering",
+        "value": "750ms; 1 - Math.pow(1 - reveal, 3)",
+        "purpose": "Procedural point gathering when the stage becomes active; assembled immediately with reduced motion."
+      },
+      {
+        "name": "ion-request-feedback",
+        "value": "Energy interpolation 0.08 per frame; busy orbit 0.24 versus ready 0.08 radians per second",
+        "purpose": "Tracks actual request busy state only. Not model telemetry or a quality/performance claim."
+      },
+      {
+        "name": "ion-render-lifecycle",
+        "value": "requestAnimationFrame while visible and motion enabled",
+        "purpose": "Pause for hidden document, hidden chat/Agent, offscreen stage, manual pause, reduced motion, or lost WebGL context. Reduced motion retains keyboard view adjustments and disables automatic-motion toggle."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1000px"
+      },
+      {
+        "name": "source-position-min",
+        "value": "701px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "640px"
+      },
+      {
+        "name": "ion-mobile-max",
+        "value": "760px"
+      }
+    ],
+    "notes": [
+      "Primitives belong to DESIGN.md frontmatter. Snippets use CSS variable fallbacks for standalone rendering.",
+      "Tonal ramps are synthesized OKLCH preview aids, not implemented palette tokens.",
+      "Scanned campus.css followed by campus-experience.css. Seven photo-backed landmarks are the current authorized interactive scope; other geometry is background context.",
+      "No external Impeccable panel rendering or physical-device performance verification is claimed.",
+      "Final photographic state is owned by landmark-film.css/js; only seven photo-backed destinations are interactive. No device-wide FPS claim.",
+      "Directory groups: 求知之间 (2), 学院与实验室 (3), 生活与文化 (2); four exploration chapters remain separate. New keys: highway, materials, information.",
+      "Photo attribution is destination-specific: highway and materials use Infrastructure Office archives; information uses the official teaching centre. The materials photo depicts a real interior atrium. Information/transport group placement is indicative, not an exact building entrance. No photograph means no interactive entry; no live university business integration is implied.",
+      "Assistant-only extension: workbench.html opening contract, final ion-assistant.css cascade, ion-assistant.js, and app.js status synchronization. Existing campus design and seven entrances preserved.",
+      "Ion allocations are chosen at initialization: 4,800 core points desktop / 2,200 at up to 760px, plus 200 depth points; pixel ratio capped at 1.5 / 1.2. No physical-device FPS or real-provider answer-quality claim.",
+      "Ion renderer/module failure and context loss retain static orbital art, truthful app-owned request status, and normal question submission; unavailable 3D controls are hidden. Model configured status is not a successful request guarantee.",
+      "Screenshots: 06_Demo/screenshots/ion-assistant/desktop.png, mobile.png, conversation.png, fallback.png; additional module-failure and context-loss/restoration evidence in the same folder."
+    ]
+  },
+  "components": [
+    {
+      "name": "Exploration Action",
+      "kind": "button",
+      "description": "Pale photographic-opening action; wide arrow gap is the distinctive hover state.",
+      "html": "<button class=\"ds-explore\">开启校园漫游<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-explore{display:inline-flex;align-items:center;gap:38px;color:#162d45;background:#f3f7fb;padding:17px 22px;min-height:56px;border:0;border-radius:4px;font:15px 'PingFang SC','Microsoft YaHei',sans-serif;cursor:pointer;transition:background .2s,gap .35s cubic-bezier(.16,1,.3,1)}.ds-explore svg{width:20px;height:20px}.ds-explore:hover{background:#c4ddff;gap:49px}.ds-explore:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-explore{transition:none}}"
+    },
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Retained lightweight-assistant day action.",
+      "html": "<button class=\"ds-primary\">模拟场景轻问答<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:14px;background:var(--accent,#244c9d);color:white;border:0;border-radius:8px;padding:13px 18px;min-height:44px;font:13px 'PingFang SC','Microsoft YaHei',sans-serif;cursor:pointer}.ds-primary svg{width:20px;height:20px}.ds-primary:hover{background:#1846b0}.ds-primary:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}.ds-primary:disabled{opacity:.65;cursor:wait}"
+    },
+    {
+      "name": "Night Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary-night",
+      "description": "Explicit night pairing, including the inherited distinct hover text color.",
+      "html": "<button class=\"ds-night-primary\">发送<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-night-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:14px;background:#c4ddff;color:#18392d;border:0;border-radius:8px;padding:13px 18px;min-height:44px;font:13px 'PingFang SC','Microsoft YaHei',sans-serif;cursor:pointer}.ds-night-primary svg{width:20px;height:20px}.ds-night-primary:hover{background:#c9dbff;color:#132b48}.ds-night-primary:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}.ds-night-primary:disabled{opacity:.65;cursor:wait}"
+    },
+    {
+      "name": "Chapter Navigation",
+      "kind": "nav",
+      "description": "A chapter's rule grows on hover or selection; the live page supplies camera, photo, and keyboard behavior.",
+      "html": "<nav class=\"ds-chapters\" aria-label=\"校园探索章节\"><button class=\"ds-chapter\" aria-pressed=\"true\"><span>求知之间</span><small>阅读与校园空间</small></button><button class=\"ds-chapter\" aria-pressed=\"false\"><span>生活之中</span><small>日常与生活社区</small></button></nav>",
+      "css": ".ds-chapters{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid var(--line,#9eadc0);color:var(--ink,#182d44);background:var(--sky,#dce5ef)}.ds-chapter{position:relative;text-align:left;min-height:85px;padding:18px 24px 12px 0;border:0;border-radius:0;background:none;color:inherit;font-family:'PingFang SC','Microsoft YaHei',sans-serif;cursor:pointer}.ds-chapter:before{content:'';position:absolute;left:0;right:24px;top:-1px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .55s cubic-bezier(.16,1,.3,1)}.ds-chapter[aria-pressed=true]:before,.ds-chapter:hover:before{transform:scaleX(1)}.ds-chapter span{font-size:20px;letter-spacing:.02em}.ds-chapter small{display:block;font-size:11px;margin-top:8px;color:var(--muted,#405973)}.ds-chapter:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-chapter:before{transition:none}}"
+    },
+    {
+      "name": "Destination Chip",
+      "kind": "chip",
+      "refersTo": "service-chip",
+      "description": "Compact horizontal destination navigation with flat ink/sky inversion.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"true\">逸夫图书馆</button>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:10px 15px;border:1px solid var(--line,#9eadc0);border-radius:4px;background:none;color:var(--ink,#182d44);font:12px 'PingFang SC','Microsoft YaHei',sans-serif;white-space:nowrap;cursor:pointer}.ds-chip:hover,.ds-chip[aria-pressed=true]{background:var(--ink,#182d44);color:var(--sky,#dce5ef)}.ds-chip:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}"
+    },
+    {
+      "name": "Map Search",
+      "kind": "input",
+      "description": "A paper-backed search field; the runtime filters the verified photograph-backed destinations.",
+      "html": "<label class=\"ds-search\"><span class=\"ds-search-label\">搜索校园地点</span><input type=\"search\" placeholder=\"找地点：图书馆、修远…\" maxlength=\"80\"/></label>",
+      "css": ".ds-search{display:block;width:240px;max-width:100%;color:var(--ink,#182d44);font-family:'PingFang SC','Microsoft YaHei',sans-serif}.ds-search-label{display:block;font-size:11px;margin-bottom:8px}.ds-search input{width:100%;min-height:44px;padding:10px 14px;background:var(--paper,#f4f7fb);color:inherit;border:1px solid var(--line,#9eadc0);border-radius:4px;font:14px 'PingFang SC','Microsoft YaHei',sans-serif;caret-color:var(--accent,#244c9d)}.ds-search input::placeholder{color:var(--muted,#405973)}.ds-search input:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}@media(max-width:640px){.ds-search input{font-size:16px}}"
+    },
+    {
+      "name": "Projected Landmark Label",
+      "kind": "custom",
+      "refersTo": "map-label",
+      "description": "HTML label with a locating stem. Projection, priority collision handling, and camera activation belong to the live renderer.",
+      "html": "<button class=\"ds-map-label\" aria-label=\"探索逸夫图书馆\">逸夫图书馆</button>",
+      "css": ".ds-map-label{position:relative;background:var(--paper,#f4f7fb);color:var(--ink,#182d44);border:0;border-radius:3px;padding:8px 12px;font:11px 'PingFang SC','Microsoft YaHei',sans-serif;box-shadow:0 4px 12px #0002;white-space:nowrap;min-height:36px;cursor:pointer;transition:background-color 150ms}.ds-map-label:after{content:'';position:absolute;top:100%;left:50%;height:19px;width:1px;background:var(--line,#9eadc0)}.ds-map-label:hover{background:var(--paper,#f4f7fb);color:var(--ink,#182d44)}.ds-map-label:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-map-label{transition:none}}"
+    },
+    {
+      "name": "Photo Failure Reading Surface",
+      "kind": "card",
+      "refersTo": "place-panel",
+      "description": "Ordinary map panel retained only when the destination photograph cannot load.",
+      "html": "<aside class=\"ds-place\"><span class=\"ds-place-en\">The Library</span><h2>逸夫图书馆</h2><p>查阅开放、借阅与续借资料；校园模型依照学校发布的 2023 版校图整理。</p><a class=\"ds-place-link\" href=\"#agent\">带入智能助手 →</a><p class=\"ds-place-note\">场景资料为课程模拟；官方信息请核查来源。</p></aside>",
+      "css": ".ds-place{max-width:330px;padding:30px 26px;background:var(--paper,#f4f7fb);color:var(--ink,#182d44);border:0;border-radius:4px;box-shadow:none;font-family:'PingFang SC','Microsoft YaHei',sans-serif}.ds-place-en{display:block;margin-bottom:14px;font:600 12px Urbanist,sans-serif;color:var(--muted,#405973)}.ds-place h2{font:500 31px 'Campus Noto','PingFang SC',sans-serif;margin:5px 0 12px}.ds-place p{font-size:13px;line-height:1.8;color:var(--muted,#405973)}.ds-place-link{display:inline-flex;margin-top:16px;padding:10px 0;border-bottom:1px solid currentColor;text-decoration:none;color:inherit;font-size:13px}.ds-place-link:hover{text-underline-offset:4px;text-decoration:underline}.ds-place-link:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}.ds-place .ds-place-note{font-size:11px}"
+    },
+    {
+      "name": "Document Disclosure",
+      "kind": "custom",
+      "description": "Native compact guide disclosure with the actual inherited open-state treatment.",
+      "html": "<details class=\"ds-document\"><summary>校园资料<small>课程知识库</small></summary><div class=\"ds-document-content\">资料来自本地课程知识库，不代表真实学校通知。</div></details>",
+      "css": ".ds-document{border-bottom:1px solid var(--line,#9eadc0);color:var(--ink,#182d44);font-family:'PingFang SC','Microsoft YaHei',sans-serif}.ds-document summary{display:flex;list-style:none;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:12px 4px;font-size:13px}.ds-document summary::-webkit-details-marker{display:none}.ds-document summary small{font-size:11px;color:var(--muted,#405973)}.ds-document summary:after{content:'+';font-size:24px;font-weight:300}.ds-document[open] summary:after{content:'−'}.ds-document[open]{background:#edf1e8;padding:0 20px}.ds-document-content{max-width:75ch;font-size:13px;line-height:1.9;padding:0 0 12px;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--muted,#405973)}.ds-document summary:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}"
+    },
+    {
+      "name": "Landmark Film Content",
+      "kind": "custom",
+      "description": "Unboxed service content over a photographed scene; shown here on its dark readability backing without substituting an unrelated image.",
+      "html": "<section class=\"ds-film\"><h2>逸夫图书馆</h2><p class=\"ds-location\">逸夫图书馆 · 渭水校区</p><p>从地图走进实景，再把问题带入助手。</p><a href=\"#\">带入智能助手 <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a></section>",
+      "css": ".ds-film{background:#13283a;color:#f4f7fb;padding:32px;font-family:\"PingFang SC\",sans-serif}.ds-film h2{font:600 clamp(36px,4.7vw,68px)/1.18 \"Campus Noto\",\"PingFang SC\",sans-serif;letter-spacing:-.03em;margin:0 0 16px}.ds-film p{font-size:14px;line-height:1.9;color:#e3edf4}.ds-film .ds-location{font-size:13px;margin-bottom:25px}.ds-film a{display:inline-flex;align-items:center;gap:24px;min-height:44px;color:#fff;text-decoration:none;border-bottom:1px solid currentColor}.ds-film svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6}.ds-film a:hover{text-decoration:underline;text-underline-offset:4px}.ds-film a:focus-visible{outline:3px solid #e0ad5b;outline-offset:4px}"
+    },
+    {
+      "name": "Ion Motion Control",
+      "kind": "button",
+      "refersTo": "ion-motion-control",
+      "description": "44px minimum motion action; the live scene implements pause/resume and locks automatic motion off for reduced-motion preference.",
+      "html": "<div class=\"ds-ion-controls\"><button type=\"button\" aria-pressed=\"false\">暂停动态</button><button type=\"button\">复位视角</button></div>",
+      "css": ".ds-ion-controls{display:flex;gap:18px;background:#071522;padding:8px;border-bottom:1px solid #315069}.ds-ion-controls button{min-height:44px;padding:0 8px;color:#e7f5ff;background:transparent;border:0;border-radius:4px;font:12px Inter,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif;cursor:pointer}.ds-ion-controls button:hover{background:#17364b}.ds-ion-controls button:focus-visible{outline:2px solid #92e3ff}.ds-ion-controls button:disabled{opacity:.65;cursor:default}"
+    },
+    {
+      "name": "Ion Composer",
+      "kind": "input",
+      "refersTo": "ion-composer",
+      "description": "Bordered dark reading surface; cyan border on focus and a pale send action. Live app handles send, stop, draft, and request state.",
+      "html": "<label class=\"ds-ion-composer\"><span>向知行提问</span><textarea rows=\"2\" placeholder=\"输入你的校园问题…\"></textarea><button type=\"button\" aria-label=\"发送问题\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M12 19V5m-6 6 6-6 6 6\"/></svg></button></label>",
+      "css": ".ds-ion-composer{display:grid;grid-template-columns:1fr auto;gap:10px;max-width:900px;padding:14px;background:#102637;border:1px solid #46718d;border-radius:12px;color:#e7f5ff;font:14px Inter,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif}.ds-ion-composer>span{grid-column:1/-1;font-size:12px}.ds-ion-composer:focus-within{border-color:#92e3ff;box-shadow:none}.ds-ion-composer textarea{min-width:0;background:transparent;border:0;color:inherit;caret-color:#92e3ff;font:inherit;resize:vertical}.ds-ion-composer textarea::placeholder{color:#a1bfd3}.ds-ion-composer textarea:focus-visible{outline:2px solid #92e3ff;outline-offset:2px}.ds-ion-composer button{align-self:end;width:40px;height:40px;background:#a1e8ff;color:#071522;border:0;border-radius:8px;cursor:pointer}.ds-ion-composer svg{width:20px;height:20px}.ds-ion-composer button:hover{background:#caf1ff}.ds-ion-composer button:focus-visible{outline:2px solid #92e3ff;outline-offset:3px}"
+    },
+    {
+      "name": "Ion Static Fallback",
+      "kind": "custom",
+      "description": "Static orbital illustration explicitly presented as a fallback; this snippet does not pretend to execute the 3D renderer.",
+      "html": "<section class=\"ds-ion-fallback\"><p class=\"ds-ion-status\">知行，准备就绪</p><div class=\"ds-ion-art\" aria-hidden=\"true\"></div><p>当前设备使用静态核心，问答功能不受影响</p></section>",
+      "css": ".ds-ion-fallback{padding:20px;background:#071522;color:#a1bfd3;font:12px/1.9 Inter,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif}.ds-ion-status{color:#9be7ff;font-size:14px}.ds-ion-art{position:relative;width:160px;height:120px;margin:30px auto;border:1px solid #7ec7e5;border-radius:50%;transform:rotate(-24deg)}.ds-ion-art:before,.ds-ion-art:after{content:\"\";position:absolute;inset:12% -14%;border:1px solid #467c9e;border-radius:50%;transform:rotate(65deg)}.ds-ion-art:after{inset:25% -24%;transform:rotate(-28deg)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Architectural Campus Open Day",
+    "overview": "Official Chang'an University photographs establish a recognizable campus before a sliding image curtain reveals the architectural model. Slate-blue grounds, pale reading surfaces, precise rules, and large Chinese titles give the experience the character of a campus exhibition. Four chapters connect photographs, camera compositions, and service navigation; the Agent remains directly accessible from the header and contextual questions.\n\nThe model represents Weishui campus's relative layout from the official Ver.2023 map, published in 2024. Photographs, simplified geography, and simulated service records have distinct provenance. This is a course demonstration, not an official school service or a measured navigation map. Visual authority is the current cascade of `02_Python_Version/static/campus.css` followed by `campus-experience.css`, with `index.html`, `campus.js`, `campus-layout.js`, and `campus-world.js` supplying content and behavior.\n\nThe assistant adds a scoped visual world inside the existing Agent: an immediately usable greeting, procedural three-dimensional core, and real question composer. Its authority is the opening design contract in `workbench.html`, with `ion-assistant.css` after the existing workbench cascade and `ion-assistant.js` responding to `app.js` state. This addition preserves the campus system and all seven campus entrances.",
+    "keyCharacteristics": [
+      "Seven official photographs, four chapters, and seven photo-backed landmarks connect campus identity with exploration.",
+      "A slate-blue architectural model preserves source-based relative geography.",
+      "Local Chinese display glyphs pair with Urbanist Latin labels and system body text.",
+      "Small rectangular controls, ruled directories, and quiet paper panels support the model.",
+      "A persistent same-document Agent workspace retains conversation and draft continuity.",
+      "A user-requested JARVIS-like ion core gives the assistant a deep-blue, cyan-particle identity and yields space to the conversation."
+    ],
+    "rules": [
+      {
+        "name": "The Coupled Theme Rule",
+        "body": "Change foreground, surface, action, and hover assignments together when switching between day and night.",
+        "section": "colors"
+      },
+      {
+        "name": "The Stable Canvas Rule",
+        "body": "Keep canvas bounds unchanged when a place panel opens; move the camera and project labels within the existing scene.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep official-photo attribution, map provenance, and simulated-service labels distinct.",
+      "Do preserve the relative Ver.2023 map layout and each selected location's camera target.",
+      "Do limit interactive map/search/directory entries to the seven photograph-backed landmarks.",
+      "Do match each photograph to its own source link and distinguish archive exteriors, the real atrium interior, and indicative college-group positions.",
+      "Do retain day/night foreground and hover pairings together.",
+      "Do keep mobile panels clear of the source link and service strip.",
+      "Do preserve keyboard navigation, reduced motion, and usable HTML routes without WebGL.",
+      "Do scope ion palette and typography to the assistant, collapse the core when messages appear, and preserve the seven campus entrances.",
+      "Do couple ion busy/ready feedback to actual request state and preserve truthful status and question submission in static fallbacks."
+    ],
+    "donts": [
+      "Don't present the model as GPS, current surveying, or a real navigation service.",
+      "Don't equate the 23 representative dormitory blocks with the physical building count.",
+      "Don't attach the Hongxiangyuan photo to the eastern living community or a south-campus stadium photo to Weishui.",
+      "Don't present college-group locations as exact building entrances or imply live university business integration.",
+      "Don't replace the campus experience with a dominant chat form or resize its canvas for a panel.",
+      "Don't turn software-rendered benchmark evidence into a physical-device performance guarantee.",
+      "Don't imply microphone listening, live model telemetry, or answer quality from the ion animation or configured-model label."
+    ]
+  }
+}

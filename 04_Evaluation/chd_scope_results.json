@@ -1,0 +1,15 @@
+{
+  "executed_at": "2026-10-01T10:17:45.511Z",
+  "checks": [
+    "Fresh workbench defaults to CHD, with upload isolation",
+    "Live offline RAG response has CHD citation link",
+    "Campus mini-assistant does not reuse official conversation",
+    "Scope switch opens new conversation, retains draft and simulation corpus",
+    "Original school conversation remains in history",
+    "Knowledge details display source dates and official link",
+    "375px mobile fits source selector with no horizontal overflow",
+    "No uncaught browser errors"
+  ],
+  "errors": [],
+  "scope": "School source selection and provenance; not an LLM quality evaluation"
+}

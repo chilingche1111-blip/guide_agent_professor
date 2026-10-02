@@ -1,0 +1,17 @@
+{
+  "executed_at": "2026-10-01T10:29:23.977Z",
+  "checks": [
+    "Default map uses over 80% viewport width and closer camera",
+    "Expanded map and top-down view work with reduced motion",
+    "Landmark toggle, zoom and camera reset preserve state",
+    "Service alias search supports keyboard positioning and detail panel",
+    "Map question transfers to CHD assistant without auto-send",
+    "Map handoff changes simulated scope safely and retains draft",
+    "Empty search and Escape leave a usable map",
+    "375px map controls fit, meet 44px targets, and locate services",
+    "WebGL fallback keeps service search and detail navigation usable",
+    "No uncaught browser errors"
+  ],
+  "errors": [],
+  "scope": "Illustrative service map only, not real campus navigation"
+}

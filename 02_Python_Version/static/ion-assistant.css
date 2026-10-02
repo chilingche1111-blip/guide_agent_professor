@@ -1,0 +1,299 @@
+/* User-pinned holographic assistant: cool ion field, no fabricated telemetry. */
+.ion-enabled {
+  --ion-ground: #071522;
+  --ion-text: #e7f5ff;
+  --ion-muted: #a1bfd3;
+  --ion-line: #315069;
+}
+.chat-view.ion-enabled,
+:host .chat-view.ion-enabled {
+  max-width: none;
+  padding: 0 clamp(20px, 4vw, 64px) 24px;
+  background: var(--ion-ground);
+  color: var(--ion-text);
+  --bg: #071522;
+  --paper: #102637;
+  --ink: #e7f5ff;
+  --muted: #a1bfd3;
+  --accent: #92e3ff;
+  --accent-hover: #caf1ff;
+  --accent-soft: #163549;
+  --line: #315069;
+  --hover: #17364b;
+}
+.ion-enabled #welcome {
+  display: none;
+}
+.ion-stage {
+  position: relative;
+  min-height: 370px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  isolation: isolate;
+}
+.ion-copy {
+  position: relative;
+  z-index: 1;
+  padding: 38px 0;
+  pointer-events: none;
+}
+.ion-copy h1 {
+  font-size: clamp(30px, 3.1vw, 48px);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin: 0 0 22px;
+  color: var(--ion-text);
+}
+.ion-copy > p {
+  color: var(--ion-muted);
+  max-width: 30ch;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 12px 0;
+}
+.ion-state {
+  color: #9be7ff;
+  font-size: 14px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.ion-state::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 50%;
+}
+.ion-stage[data-state="processing"] .ion-state {
+  color: #ffd199;
+}
+.ion-field {
+  height: 360px;
+  position: relative;
+  min-width: 0;
+  cursor: grab;
+  touch-action: pan-y;
+}
+.ion-field:active {
+  cursor: grabbing;
+}
+.ion-field canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ion-field:focus-visible {
+  outline: 2px solid #92e3ff;
+  outline-offset: -4px;
+}
+.ion-fallback {
+  position: absolute;
+  inset: 20% 25%;
+  border: 1px solid #7ec7e5;
+  border-radius: 50%;
+  transform: rotate(-24deg);
+}
+.ion-fallback::before,
+.ion-fallback::after {
+  content: "";
+  position: absolute;
+  inset: 12% -14%;
+  border: 1px solid #467c9e;
+  border-radius: 50%;
+  transform: rotate(65deg);
+}
+.ion-fallback::after {
+  inset: 25% -24%;
+  transform: rotate(-28deg);
+}
+[data-renderer="webgl"] .ion-fallback {
+  display: none;
+}
+[data-renderer="fallback"] canvas {
+  display: none;
+}
+[data-renderer="fallback"] .ion-field {
+  cursor: default;
+}
+.ion-controls {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid var(--ion-line);
+  padding: 0 0 8px;
+  color: var(--ion-muted);
+  font-size: 12px;
+}
+.ion-controls p {
+  flex: 1;
+  margin: 0;
+}
+.ion-controls button {
+  min-height: 44px;
+  padding: 0 8px;
+  color: var(--ion-text);
+  border-radius: 4px;
+}
+.ion-controls button:hover {
+  background: #17364b;
+}
+.ion-controls button:focus-visible {
+  outline: 2px solid #92e3ff;
+}
+.ion-enabled #starter-heading {
+  display: none;
+}
+.ion-enabled .starters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 24px;
+  margin: 16px 0;
+}
+.ion-enabled .starters > button {
+  flex: 1 1 150px;
+  min-height: 48px;
+  padding: 8px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ion-text);
+}
+.ion-enabled .starters > button > span:not(.starter-icon) {
+  display: none;
+}
+.ion-enabled .starters strong {
+  font-size: 13px;
+}
+.ion-enabled .starter-icon {
+  background: none;
+  color: #92e3ff;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+.ion-enabled .composer-zone {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto 0;
+}
+:host .ion-enabled .composer-zone {
+  margin-top: 20px;
+}
+.ion-enabled .composer {
+  background: #102637;
+  border: 1px solid #46718d;
+  border-radius: 12px;
+}
+.ion-enabled .composer:focus-within {
+  border-color: #92e3ff;
+  box-shadow: none;
+}
+.ion-enabled textarea {
+  caret-color: #92e3ff;
+}
+.ion-enabled textarea::placeholder {
+  color: #a1bfd3;
+}
+.ion-enabled .messages {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 24px;
+}
+.ion-enabled .send-button {
+  background: #a1e8ff;
+  color: #071522;
+}
+.ion-enabled .message a {
+  color: #a1e8ff;
+}
+.ion-enabled .source-chip {
+  color: #cde9fa;
+}
+.ion-enabled.has-messages .ion-stage {
+  min-height: 96px;
+  grid-template-columns: 1fr 130px;
+}
+.ion-enabled.has-messages .ion-copy {
+  padding: 14px 0;
+}
+.ion-enabled.has-messages .ion-copy h1,
+.ion-enabled.has-messages .ion-copy > p,
+.ion-enabled.has-messages #ion-hint {
+  display: none;
+}
+.ion-enabled.has-messages .ion-field {
+  height: 100px;
+}
+.ion-enabled.has-messages .ion-controls {
+  justify-content: flex-end;
+  padding: 0;
+}
+.ion-enabled.has-messages .ion-controls button {
+  font-size: 11px;
+}
+.ion-enabled.has-messages .composer-zone {
+  background: #071522;
+}
+@media (max-width: 760px) {
+  .chat-view.ion-enabled,
+  :host .chat-view.ion-enabled {
+    padding: 0 18px 20px;
+  }
+  .ion-stage {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .ion-copy {
+    padding: 26px 0 0;
+  }
+  .ion-copy h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .ion-copy > p {
+    max-width: none;
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  .ion-copy > p:not(#ion-model) {
+    display: none;
+  }
+  .ion-field {
+    height: 180px;
+  }
+  .ion-controls {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .ion-controls p {
+    flex-basis: 100%;
+    font-size: 11px;
+  }
+  .ion-controls button {
+    padding: 0 12px;
+  }
+  .ion-enabled .starters {
+    gap: 4px 12px;
+    margin: 8px 0;
+  }
+  .ion-enabled .starters > button {
+    flex: 1 1 100px;
+  }
+  .ion-enabled .starters strong {
+    font-size: 11px;
+  }
+  .ion-enabled .composer-zone,
+  :host .ion-enabled .composer-zone {
+    margin-top: 12px;
+  }
+  .ion-enabled.has-messages .ion-stage {
+    grid-template-columns: 1fr 100px;
+  }
+}

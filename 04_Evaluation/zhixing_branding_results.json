@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-10-01T12:42:22.266Z",
+  "scope": "Branding regression only; offline simulated knowledge, not real LLM quality",
+  "passed": 8,
+  "checks": [
+    "Homepage product name, monogram and browser title",
+    "Same-page Agent shows full brand and short conversational persona",
+    "Actual offline RAG answer retains references and renamed ready status",
+    "Exported Markdown heading, assistant attribution and filename",
+    "Return to campus preserves renamed browser title",
+    "390px homepage and Agent layout fit without horizontal overflow",
+    "Standalone workbench uses the same product name",
+    "Report title updated; 31 chapters and 74 numbered sections preserved"
+  ],
+  "errors": []
+}

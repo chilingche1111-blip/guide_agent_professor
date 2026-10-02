@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f6f7f2" />
+    <title>长安知行 · 长安大学智慧校园助手</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script type="module" src="/static/workbench-boot.js"></script>
+    <link rel="stylesheet" href="/static/explore.css" />
+    <link rel="stylesheet" href="/static/workbench-tech.css" />
+    <link rel="stylesheet" href="/static/ion-assistant.css" />
+  </head>
+  <body>
+    <!-- THESIS: The assistant is an interactive ion core, then a quiet companion to real answers.
+OWN-WORLD: User-pinned JARVIS-like cyan particles on a deep-blue field; existing campus identity and workspace preserved.
+STORY: Enter without a blocking intro; orbit the core, ask a question, see actual request-state feedback.
+FIRST VIEWPORT: Left greeting, large right 3D core, motion controls and real composer below. Mobile stacks the same controls.
+FORM: Narrow extension of the existing Agent; user-pinned direction, code-led procedural WebGL, no seed tournament.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+    <a class="skip" href="#main">跳到主要内容</a>
+    <div class="shell">
+      <aside class="sidebar" id="sidebar" aria-label="主导航">
+        <a class="brand" href="/" aria-label="返回沉浸校园首页"
+          ><span class="brand-mark" data-icon="cpu"></span
+          ><span>长安知行<small>长安大学 · 课程项目</small></span></a
+        >
+        <button class="new-chat" id="new-chat">
+          <span data-icon="plus"></span>开启新的对话<span class="keycap"
+            >N</span
+          >
+        </button>
+        <nav>
+          <button class="nav-item active" data-view="chat">
+            <span data-icon="message"></span>智能助手</button
+          ><button class="nav-item" data-view="knowledge">
+            <span data-icon="book"></span>知识空间<span
+              id="doc-count"
+              class="count"
+              >12</span
+            ></button
+          ><button class="nav-item" data-view="services">
+            <span data-icon="grid"></span>校园服务
+          </button>
+        </nav>
+        <div class="history-heading">
+          最近对话<span data-icon="clock"></span>
+        </div>
+        <div id="history" class="history" aria-label="历史会话">
+          <p class="muted small">第一段对话，从这里开始。</p>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="local-note">
+            <span class="status-dot"></span>本地工作空间<small
+              >会话保存在此设备的服务端</small
+            >
+          </div>
+          <button class="nav-item" id="open-settings">
+            <span data-icon="sliders"></span>模型与连接<span
+              data-icon="arrow-up-right"
+            ></span>
+          </button>
+          <div class="profile">
+            <span class="avatar">同</span
+            ><span>同学，你好<small>让校园生活简单一点</small></span
+            ><button
+              class="icon-button"
+              id="theme-toggle"
+              aria-label="切换深浅主题"
+              data-icon="moon"
+            ></button>
+          </div>
+        </div>
+      </aside>
+      <button
+        id="sidebar-scrim"
+        class="scrim"
+        aria-label="关闭导航"
+        hidden
+      ></button>
+      <main id="main" class="main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <a class="campus-return" href="/" aria-label="返回校园场景"
+              ><span data-icon="home"></span>校园</a
+            >
+            <button
+              id="menu-toggle"
+              class="icon-button mobile-only"
+              aria-label="打开导航"
+              aria-expanded="false"
+              data-icon="menu"
+            ></button
+            ><span id="view-title">智能助手</span
+            ><span class="topbar-divider"></span
+            ><button id="model-badge" class="model-badge">
+              <span class="status-dot"></span
+              ><span id="model-label">离线演示</span
+              ><span data-icon="chevron-down"></span>
+            </button>
+          </div>
+          <div class="topbar-actions">
+            <span class="demo-label">长安大学 · 非官方课程项目</span
+            ><button
+              id="export-chat"
+              class="icon-button"
+              aria-label="导出当前对话"
+              title="导出当前对话"
+              data-icon="download"
+            ></button
+            ><button
+              id="toggle-sources"
+              class="icon-button"
+              aria-label="展开来源与执行记录"
+              title="来源与执行记录"
+              data-icon="panel"
+            ></button>
+          </div>
+        </header>
+        <div class="knowledge-scope-bar">
+          <label for="knowledge-scope">资料范围</label>
+          <select id="knowledge-scope" aria-describedby="scope-notice">
+            <option value="chd_public">长安大学 · 官方资料</option>
+            <option value="simulation">模拟校园 + 我的上传</option>
+          </select>
+          <p id="scope-notice" role="status">
+            官方网页释义摘要，非实时政策。业务工具始终为教学模拟。
+          </p>
+        </div>
+        <section id="chat-view" class="view chat-view ion-enabled">
+          <section
+            id="ion-stage"
+            class="ion-stage"
+            aria-label="长安知行三维交互核心"
+            data-renderer="fallback"
+          >
+            <div class="ion-copy">
+              <h1>连接校园。<br />让问题，有回应。</h1>
+              <div class="ion-state" role="status">
+                <span id="ion-state">知行，准备就绪</span>
+              </div>
+              <p>你好，我是知行。<br />你的校园问题，从这里开始。</p>
+              <p id="ion-model">模型状态以顶部设置为准</p>
+            </div>
+            <div
+              id="ion-field"
+              class="ion-field"
+              tabindex="0"
+              role="group"
+              aria-label="三维粒子核心，可拖动旋转；方向键调整，Home复位"
+            >
+              <div class="ion-fallback" aria-hidden="true"></div>
+            </div>
+            <div class="ion-controls">
+              <p id="ion-hint">拖动探索核心 · 方向键调整视角 · 不启用麦克风</p>
+              <button type="button" id="ion-reset">复位视角</button>
+              <button type="button" id="ion-motion" aria-pressed="false">
+                暂停动态
+              </button>
+            </div>
+          </section>
+          <div id="welcome" class="welcome">
+            <div class="welcome-main">
+              <h1>
+                你的校园事务，<br />交给<span class="serif-accent"
+                  >智能助手。</span
+                >
+              </h1>
+              <p class="welcome-copy">
+                查资料、理流程、调用工具，让问题有据可依。<br />选择一个任务，开始你的校园服务对话。
+              </p>
+              <div class="welcome-tags">
+                <span><span data-icon="book"></span>有据可查</span
+                ><span><span data-icon="globe"></span>连接新知</span
+                ><span><span data-icon="shield"></span>本地会话</span>
+              </div>
+            </div>
+            <section class="explorer" aria-labelledby="explore-heading">
+              <div class="explore-heading">
+                <h2 id="explore-heading">今天，想去哪里？</h2>
+                <span>服务探索</span>
+              </div>
+              <div
+                class="explore-tabs"
+                role="tablist"
+                aria-label="校园服务场景"
+              >
+                <button
+                  id="tab-library"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="explore-panel"
+                  data-place="library"
+                >
+                  <img src="/static/assets/lucide/book-open.svg" alt="" />图书馆
+                </button>
+                <button
+                  id="tab-study"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="explore-panel"
+                  tabindex="-1"
+                  data-place="study"
+                >
+                  <img
+                    src="/static/assets/lucide/graduation-cap.svg"
+                    alt=""
+                  />教务处
+                </button>
+                <button
+                  id="tab-life"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="explore-panel"
+                  tabindex="-1"
+                  data-place="life"
+                >
+                  <img
+                    src="/static/assets/lucide/building-2.svg"
+                    alt=""
+                  />生活区
+                </button>
+                <button
+                  id="tab-network"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="explore-panel"
+                  tabindex="-1"
+                  data-place="network"
+                >
+                  <img src="/static/assets/lucide/wifi.svg" alt="" />网络中心
+                </button>
+              </div>
+              <div
+                id="explore-panel"
+                role="tabpanel"
+                aria-labelledby="tab-library"
+                tabindex="0"
+              >
+                <p id="explore-description">
+                  从借阅规则到续借流程，先找到你关心的事。
+                </p>
+                <div id="explore-questions" class="explore-questions"></div>
+                <button id="explore-use" class="explore-use">
+                  带入对话 <span aria-hidden="true">↗</span>
+                </button>
+                <p class="explore-note" id="explore-note" role="status">
+                  选择一个问题，编辑后再发送。
+                </p>
+              </div>
+            </section>
+            <div class="campus-art" aria-hidden="true" hidden>
+              <svg viewBox="0 0 320 300" fill="none">
+                <circle cx="163" cy="147" r="114" fill="var(--art-circle)" />
+                <path
+                  d="M36 247H294M51 258H279"
+                  stroke="var(--art-line)"
+                  stroke-width="1.4"
+                />
+                <path
+                  d="M88 232V125L160 86L232 125V232"
+                  fill="var(--paper)"
+                  stroke="var(--art-line)"
+                  stroke-width="2"
+                />
+                <path d="M78 127L160 78L242 127H78Z" fill="var(--accent)" />
+                <path
+                  d="M98 121L160 84L222 121"
+                  stroke="var(--paper)"
+                  stroke-width="1.4"
+                />
+                <path d="M70 235H250V244H70V235Z" fill="var(--art-line)" />
+                <path
+                  d="M147 232V195C147 179 173 179 173 195V232"
+                  fill="var(--art-circle)"
+                  stroke="var(--art-line)"
+                  stroke-width="2"
+                />
+                <path
+                  d="M105 143H120V162H105zM151 143H166V162H151zM197 143H212V162H197zM105 183H120V206H105zM197 183H212V206H197z"
+                  fill="var(--art-circle)"
+                  stroke="var(--art-line)"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M54 242V194M273 241V177"
+                  stroke="var(--art-line)"
+                  stroke-width="2"
+                />
+                <ellipse
+                  cx="54"
+                  cy="182"
+                  rx="19"
+                  ry="30"
+                  fill="var(--accent-soft)"
+                  stroke="var(--art-line)"
+                />
+                <ellipse
+                  cx="273"
+                  cy="173"
+                  rx="19"
+                  ry="37"
+                  fill="var(--accent-soft)"
+                  stroke="var(--art-line)"
+                />
+                <path
+                  d="M160 78V47M160 47L188 53L160 61"
+                  stroke="var(--art-line)"
+                  stroke-width="2"
+                />
+                <path
+                  d="M75 67H94M84.5 57.5V76.5M249 98H262M255.5 91.5V104.5"
+                  stroke="var(--accent)"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="239"
+                  cy="60"
+                  r="5"
+                  stroke="var(--accent)"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M104 268C143 263 190 263 216 268"
+                  stroke="var(--art-line)"
+                  stroke-dasharray="3 5"
+                /></svg
+              ><span class="art-caption">A LITTLE HELP. A BETTER DAY.</span>
+            </div>
+          </div>
+          <div
+            id="messages"
+            class="messages"
+            role="log"
+            aria-live="polite"
+            aria-label="对话记录"
+          ></div>
+          <div class="composer-zone">
+            <div id="starter-heading" class="section-eyebrow">
+              从一个小问题开始 <span>或者，直接说说你的需要</span>
+            </div>
+            <div id="starters" class="starters">
+              <button data-prompt="长安大学校外如何访问图书馆数据库？">
+                <span class="starter-icon" data-icon="book"></span
+                ><strong>查图书馆资源</strong><span>校外数据库访问指引</span
+                ><span
+                  class="starter-arrow"
+                  data-icon="arrow-up-right"
+                ></span></button
+              ><button data-prompt="校园卡丢了怎么办？">
+                <span class="starter-icon" data-icon="card"></span
+                ><strong>办点校园事</strong><span>校园卡、选课与生活服务</span
+                ><span
+                  class="starter-arrow"
+                  data-icon="arrow-up-right"
+                ></span></button
+              ><button
+                data-prompt="查询申请进度，我的模拟学号是 S1001，申请编号是 AP2026001"
+              >
+                <span class="starter-icon" data-icon="list"></span
+                ><strong>查申请进度</strong><span>查看模拟业务办理状态</span
+                ><span class="starter-arrow" data-icon="arrow-up-right"></span>
+              </button>
+            </div>
+            <form id="chat-form" class="composer">
+              <label for="message-input" class="sr-only">向知行提问</label
+              ><textarea
+                id="message-input"
+                placeholder="有什么我可以帮你？"
+                rows="2"
+                maxlength="4000"
+              ></textarea>
+              <div class="composer-toolbar">
+                <div class="composer-tools">
+                  <button
+                    type="button"
+                    id="web-toggle"
+                    class="pill"
+                    aria-pressed="false"
+                  >
+                    <span data-icon="globe"></span>联网搜索</button
+                  ><button
+                    type="button"
+                    id="attach-document"
+                    class="icon-button"
+                    aria-label="上传知识文档"
+                    title="上传知识文档"
+                    data-icon="paperclip"
+                  ></button
+                  ><span class="context-hint" id="context-hint"
+                    >基于校园知识库回答</span
+                  >
+                </div>
+                <div class="send-group">
+                  <span class="shortcut-hint">Enter 发送</span
+                  ><button
+                    id="send-button"
+                    class="send-button"
+                    aria-label="发送消息"
+                    type="submit"
+                    data-icon="arrow-up"
+                  ></button
+                  ><button
+                    id="stop-button"
+                    class="send-button"
+                    aria-label="停止生成"
+                    type="button"
+                    hidden
+                    data-icon="stop"
+                  ></button>
+                </div>
+              </div>
+            </form>
+            <div class="composer-footnote">
+              <span id="connection-note"
+                >离线演示 · 配置模型后可进行开放式智能问答</span
+              ><span>AI 回答请结合来源核实</span>
+            </div>
+            <div id="progress" class="progress" role="status" hidden></div>
+          </div>
+        </section>
+        <section id="knowledge-view" class="view content-view" hidden>
+          <div class="page-heading">
+            <div class="eyebrow">YOUR KNOWLEDGE, ORGANIZED</div>
+            <h1>知识空间</h1>
+            <p>让每个答案，都有一处可以回看的来源。</p>
+          </div>
+          <div class="knowledge-toolbar">
+            <label class="search-field"
+              ><span data-icon="search"></span
+              ><input
+                id="knowledge-search"
+                placeholder="搜索标题、主题或正文"
+                aria-label="搜索知识库" /></label
+            ><button id="upload-document" class="primary-button">
+              <span data-icon="plus"></span>上传资料
+            </button>
+          </div>
+          <p class="small muted">
+            支持 UTF-8 的 Markdown / TXT，单份最多 500
+            KB。上传内容仅在当前浏览器工作空间的“模拟校园 +
+            我的上传”范围使用，不混入长安大学官方资料。
+          </p>
+          <div id="knowledge-grid" class="knowledge-grid"></div>
+        </section>
+        <section id="services-view" class="view content-view" hidden>
+          <div class="page-heading">
+            <div class="eyebrow">LESS SEARCHING. MORE LIVING.</div>
+            <h1>校园服务</h1>
+            <p>把繁琐留给助手，把时间留给校园生活。</p>
+          </div>
+          <div id="services-grid" class="services-grid"></div>
+          <div class="notice">
+            <span data-icon="shield"></span>
+            <div>
+              <strong>这是一个可运行的教学实验系统</strong>
+              <p>
+                办理进度与转人工均使用本地模拟数据，不连接真实学校的教务、支付或客服系统。请勿上传真实学号、病历或其他敏感资料。
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer class="app-footer">
+          长安知行 <span>·</span> 把答案，带到身边。<span class="version"
+            >RAG + AGENT / V2.0</span
+          >
+        </footer>
+      </main>
+      <aside
+        id="sources-panel"
+        class="sources-panel"
+        aria-label="来源与执行记录"
+        hidden
+      >
+        <div class="panel-heading">
+          <h2>答案背后的依据</h2>
+          <button
+            id="close-sources"
+            class="icon-button"
+            aria-label="关闭来源面板"
+            data-icon="x"
+          ></button>
+        </div>
+        <p class="small muted">
+          检索来源和工具执行记录。这里不展示模型的内部思维过程。
+        </p>
+        <div id="source-content" class="source-content">
+          <div class="empty-state">
+            <span data-icon="book"></span>
+            <h3>让答案有迹可循</h3>
+            <p>开始对话后，在这里查看参考资料和执行步骤。</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <dialog id="settings-dialog">
+      <div class="dialog-heading">
+        <div>
+          <div class="eyebrow">MODEL & CONNECTIONS</div>
+          <h2>选择你的智能引擎</h2>
+        </div>
+        <button
+          class="icon-button"
+          data-close="settings-dialog"
+          aria-label="关闭设置"
+          data-icon="x"
+        ></button>
+      </div>
+      <p class="muted small">
+        支持四种主流 API 协议与本地模型。模型 ID 可按供应商当前可用列表修改。
+      </p>
+      <form id="settings-form">
+        <label class="switch-row"
+          ><span
+            ><strong>启用大模型</strong
+            ><small>关闭时使用可复现的离线知识库演示</small></span
+          ><input id="model-enabled" type="checkbox" role="switch"
+        /></label>
+        <div class="form-grid">
+          <label>服务提供商<select id="provider-select"></select></label
+          ><label
+            >API 协议<select id="protocol-select">
+              <option value="openai">OpenAI Chat Completions</option>
+              <option value="responses">OpenAI Responses</option>
+              <option value="anthropic">Anthropic Messages</option>
+              <option value="gemini">Gemini generateContent</option>
+            </select></label
+          ><label class="full"
+            >API 基础地址<input
+              id="base-url"
+              type="url"
+              required
+              placeholder="https://api.example.com/v1" /></label
+          ><label class="full"
+            >模型 ID<input
+              id="model-id"
+              required
+              placeholder="供应商提供的模型 ID"
+              autocomplete="off" /></label
+          ><label class="full"
+            >API Key<input
+              id="api-key"
+              type="password"
+              autocomplete="new-password"
+              placeholder="仅发送至本机服务端，不写入文件"
+          /></label>
+        </div>
+        <div class="key-status">
+          <span id="key-status"></span
+          ><label><input id="clear-key" type="checkbox" />清除已存密钥</label>
+        </div>
+        <details class="search-settings">
+          <summary>联网搜索设置</summary>
+          <p class="small muted">
+            默认使用 DuckDuckGo，失败时尝试 Bing
+            RSS（仅个人非商业实验）。也可配置
+            Tavily。开启联网会向搜索服务发送搜索词，请勿包含隐私信息。
+          </p>
+          <label
+            >Tavily API Key（可选）<input
+              id="search-key"
+              type="password"
+              autocomplete="new-password"
+              placeholder="tvly-…"
+          /></label>
+          <div class="key-status">
+            <span id="search-key-status"></span
+            ><label
+              ><input
+                id="clear-search-key"
+                type="checkbox"
+              />清除搜索密钥</label
+            >
+          </div>
+        </details>
+        <div class="notice compact">
+          <span data-icon="lock"></span>
+          <p>
+            密钥仅存服务端内存，重启后需重新填写。对话与知识片段会发送至你选择的模型服务。仅供本机个人实验使用。
+          </p>
+        </div>
+        <div id="settings-status" class="small" role="status"></div>
+        <div class="dialog-actions">
+          <button id="test-connection" type="button" class="secondary-button">
+            保存并测试连接</button
+          ><button class="primary-button" type="submit">
+            保存设置<span data-icon="arrow-right"></span>
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="document-dialog">
+      <div class="dialog-heading">
+        <h2 id="document-title">知识详情</h2>
+        <button
+          class="icon-button"
+          data-close="document-dialog"
+          aria-label="关闭文档"
+          data-icon="x"
+        ></button>
+      </div>
+      <p id="document-meta" class="small muted"></p>
+      <div id="document-body" class="document-body"></div>
+      <div id="document-actions" class="dialog-actions"></div>
+    </dialog>
+    <dialog id="confirm-dialog">
+      <div class="dialog-heading"><h2 id="confirm-title">确认操作</h2></div>
+      <p id="confirm-message"></p>
+      <input id="confirm-input" aria-label="会话名称" hidden />
+      <div class="dialog-actions">
+        <button id="confirm-cancel" class="secondary-button">取消</button
+        ><button id="confirm-ok" class="primary-button">确认</button>
+      </div>
+    </dialog>
+    <input type="file" id="file-input" accept=".md,.txt" hidden />
+    <div id="toast" class="toast" role="status" hidden></div>
+  </body>
+</html>

@@ -44,6 +44,17 @@ class AppTests(unittest.TestCase):
         response = self.client.get("/")
         try:
             body = response.get_data(as_text=True)
+            self.assertIn('for="assistant-question"', body)
+            self.assertIn('aria-live="polite"', body)
+            self.assertIn('/static/workbench.html', body)
+            self.assertIn('id="places"', body)
+        finally:
+            response.close()
+
+    def test_workbench_keeps_accessible_form(self):
+        response = self.client.get("/static/workbench.html")
+        try:
+            body = response.get_data(as_text=True)
             self.assertIn('label for="message-input"', body)
             self.assertIn('aria-live="polite"', body)
         finally:

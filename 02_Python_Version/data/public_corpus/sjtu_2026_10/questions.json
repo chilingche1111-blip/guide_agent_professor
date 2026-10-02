@@ -1,0 +1,22 @@
+[
+  {"id":"SJQ01","question":"校园卡补办预约后用什么取卡？","expected_source":"SJ01","kind":"direct"},
+  {"id":"SJQ02","question":"手机预约领新卡，还需要输入卡密码吗？","expected_source":"SJ01","kind":"paraphrase"},
+  {"id":"SJQ03","question":"校园卡挂失解挂可以在哪里操作？","expected_source":"SJ02","kind":"direct"},
+  {"id":"SJQ04","question":"卡丢了，能不能先在手机上停用？","expected_source":"SJ02","kind":"paraphrase"},
+  {"id":"SJQ05","question":"校园卡免密消费限额是多少？","expected_source":"SJ03","kind":"direct"},
+  {"id":"SJQ06","question":"饭卡不用输密码的额度是按一笔还是一顿饭累计？","expected_source":"SJ03","kind":"paraphrase"},
+  {"id":"SJQ07","question":"校园卡余额及消费明细在哪里查询？","expected_source":"SJ04","kind":"direct"},
+  {"id":"SJQ08","question":"想查卡里还剩多少钱和花费记录，有哪些入口？","expected_source":"SJ04","kind":"paraphrase"},
+  {"id":"SJQ09","question":"校园卡充值后怎样同步余额？","expected_source":"SJ05","kind":"direct"},
+  {"id":"SJQ10","question":"夜里十二点给饭卡充钱可以吗？","expected_source":"SJ05","kind":"paraphrase"},
+  {"id":"SJQ11","question":"忘记校园卡密码如何重置？","expected_source":"SJ06","kind":"direct"},
+  {"id":"SJQ12","question":"扫码设好查询口令后，消费口令会自动更改吗？","expected_source":"SJ06","kind":"paraphrase"},
+  {"id":"SJQ13","question":"激活旧校园卡后新卡还能用吗？","expected_source":"SJ07","kind":"direct"},
+  {"id":"SJQ14","question":"补领之后又找回原来的卡，可以让两张一起生效吗？","expected_source":"SJ07","kind":"paraphrase"},
+  {"id":"SJQ15","question":"交大VPN需要申请开通吗？","expected_source":"SJ08","kind":"direct"},
+  {"id":"SJQ16","question":"在家访问校内资源的网络账号和jAccount一样吗？","expected_source":"SJ08","kind":"paraphrase"},
+  {"id":"SJQ17","question":"本科生缓考申请应何时提交？","expected_source":"SJ09","kind":"direct"},
+  {"id":"SJQ18","question":"突然生病赶不上考试，需要哪种医院的证明？","expected_source":"SJ09","kind":"paraphrase"},
+  {"id":"SJQ19","question":"图书馆新生指南中的开放时间是什么？","expected_source":"SJ10","kind":"direct"},
+  {"id":"SJQ20","question":"预约到的书在架子上等我多久？","expected_source":"SJ10","kind":"paraphrase"}
+]

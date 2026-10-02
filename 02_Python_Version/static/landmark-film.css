@@ -1,0 +1,222 @@
+/* A matched cut from the campus model into its photographed landmark. */
+.landmark-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  overflow: hidden;
+  pointer-events: none;
+}
+.landmark-scene[hidden] {
+  display: none;
+}
+.landmark-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 48%;
+  opacity: 0;
+  transform-origin: 58% 52%;
+}
+.landmark-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  opacity: 0;
+  transform: scale(1.035);
+  transform-origin: 58% 52%;
+  background:
+    linear-gradient(180deg, rgba(7, 22, 35, 0.45), transparent 28%),
+    linear-gradient(
+      90deg,
+      rgba(7, 22, 35, 0.85) 0%,
+      rgba(7, 22, 35, 0.6) 34%,
+      rgba(7, 22, 35, 0.08) 75%
+    ),
+    linear-gradient(0deg, rgba(7, 22, 35, 0.55), transparent 32%);
+}
+#landmark-back {
+  position: absolute;
+  top: 110px;
+  left: 4%;
+  z-index: 4;
+  color: #f4f7fb;
+  pointer-events: auto;
+  min-height: 44px;
+}
+#landmark-loading {
+  position: absolute;
+  left: 4%;
+  top: 165px;
+  color: #fff;
+  z-index: 4;
+}
+.landmark-provenance {
+  position: absolute;
+  z-index: 4;
+  left: 4%;
+  right: 4%;
+  bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #f4f7fb;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.landmark-provenance a {
+  pointer-events: auto;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.has-landmark
+  :is(
+    .map-toolbar,
+    .experience-actions,
+    .chapter-nav,
+    .world-bottom,
+    .scene-tools,
+    .scene-labels,
+    .hero-copy,
+    .world-word
+  ) {
+  opacity: 0;
+  visibility: hidden;
+}
+.campus-world.has-landmark .place-panel {
+  z-index: 10;
+  left: 4%;
+  right: auto;
+  top: auto;
+  bottom: 115px;
+  width: min(540px, 52%);
+  max-height: calc(100% - 290px);
+  background: none;
+  color: #f4f7fb;
+  padding: 0 16px 0 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.has-landmark .place-panel h2 {
+  font-family: "Campus Noto", "PingFang SC", sans-serif;
+  font-weight: 600;
+  font-size: clamp(36px, 4.7vw, 68px);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  margin: 0 0 16px;
+  text-wrap: balance;
+}
+.has-landmark .place-panel .place-en {
+  color: #dfebf4;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+.has-landmark .place-panel > p {
+  max-width: 37em;
+  color: #e3edf4;
+  line-height: 1.9;
+  font-size: 14px;
+}
+.has-landmark .place-panel .place-stepper {
+  position: static;
+  margin: 20px 0;
+  color: #e3edf4;
+}
+.has-landmark .place-stepper button {
+  background: transparent;
+  border-color: #bdcbd8;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+}
+.has-landmark #place-agent {
+  color: #fff;
+  margin-top: 20px;
+  min-height: 44px;
+}
+.has-landmark
+  .place-panel
+  :is(.panel-close, .place-photo, h3, .place-docs, #place-ask, .panel-note) {
+  display: none;
+}
+body:has(.has-landmark) .site-header,
+body:has(.has-landmark) .site-header a,
+body:has(.has-landmark) .site-header .round-control {
+  color: #f4f7fb;
+}
+body:has(.has-landmark) .site-header .agent-entry {
+  color: #13263d;
+  background: #edf3fc;
+}
+@media (max-width: 640px) {
+  #landmark-back {
+    top: 96px;
+    left: 6%;
+    background: rgba(7, 22, 35, 0.88);
+    padding: 0 14px;
+    border-radius: 4px;
+  }
+  #landmark-loading {
+    top: 146px;
+    left: 6%;
+  }
+  .landmark-image {
+    object-position: 61% 45%;
+  }
+  .landmark-shade {
+    background:
+      linear-gradient(180deg, rgba(7, 22, 35, 0.45), transparent 28%),
+      linear-gradient(
+        0deg,
+        rgba(7, 22, 35, 0.95),
+        rgba(7, 22, 35, 0.78) 34%,
+        rgba(7, 22, 35, 0.04) 77%
+      );
+  }
+  .campus-world.has-landmark .place-panel {
+    left: 6%;
+    right: 6%;
+    top: auto;
+    bottom: 105px;
+    width: auto;
+    max-height: calc(100% - 390px);
+    padding: 0 5px 0 0;
+  }
+  .has-landmark .place-panel h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .has-landmark .place-panel .place-en {
+    margin-bottom: 14px;
+    font-size: 11px;
+  }
+  .has-landmark .place-panel > p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .has-landmark .place-panel .place-stepper {
+    margin: 14px 0;
+  }
+  .has-landmark #place-agent {
+    margin-top: 12px;
+  }
+  .landmark-provenance {
+    left: 6%;
+    right: 6%;
+    bottom: 24px;
+    display: block;
+    font-size: 10px;
+  }
+  .landmark-provenance a {
+    display: block;
+    margin-top: 9px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .landmark-image {
+    transform: none;
+  }
+}

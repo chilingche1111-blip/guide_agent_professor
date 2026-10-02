@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-01T08:45:52.350Z",
+  "checks": [
+    "Four local licensed SVG assets loaded",
+    "Keyboard tabs: arrows and End update active scene",
+    "Selected question preserves draft and does not auto-send",
+    "Dark theme rendered",
+    "Reduced motion has no scene animation",
+    "Four responsive widths, touch-size mobile flow",
+    "No browser JavaScript errors"
+  ],
+  "errors": []
+}

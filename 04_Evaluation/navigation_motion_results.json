@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-01T09:53:19.958Z",
+  "environment": "Local headless Chrome /1440x960 /software WebGL. Single-run diagnostics, not device FPS or statistical benchmark.",
+  "baseline": [
+    {
+      "apiDelayMs": 0,
+      "clickToVisibleMs": 92
+    },
+    {
+      "apiDelayMs": 800,
+      "clickToVisibleMs": 1298
+    }
+  ],
+  "samples": [
+    {
+      "apiDelayMs": 0,
+      "clickToVisibleMs": 37,
+      "maxFrameGapMs": 17
+    },
+    {
+      "apiDelayMs": 800,
+      "clickToVisibleMs": 46,
+      "maxFrameGapMs": 17
+    }
+  ],
+  "checks": [
+    "Rapid back/forward settles correctly (0ms API delay)",
+    "Slow API: immediate shell, protected data controls, return available during hydration",
+    "Rapid back/forward settles correctly (800ms API delay)",
+    "Reduced-motion mobile: no spatial animation, no unsolicited keyboard, no overflow",
+    "No uncaught errors"
+  ],
+  "errors": []
+}

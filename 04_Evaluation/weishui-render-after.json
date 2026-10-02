@@ -1,0 +1,58 @@
+{
+  "executed_at": "2026-10-01T11:31:50.968Z",
+  "environment": "Headless Chrome, software WebGL, 1440x960; synthetic single-run rAF intervals, not INP or physical-device FPS",
+  "phases": [
+    {
+      "name": "curtain",
+      "samples": 80,
+      "p50_ms": 16.7,
+      "p95_ms": 16.7,
+      "max_ms": 16.8,
+      "render_samples": 1,
+      "render_p50_ms": 0.7,
+      "draw_calls": 50,
+      "frames_over_50ms": 0,
+      "long_tasks": 0,
+      "long_task_total_ms": 0
+    },
+    {
+      "name": "district",
+      "samples": 79,
+      "p50_ms": 16.7,
+      "p95_ms": 16.7,
+      "max_ms": 16.8,
+      "render_samples": 37,
+      "render_p50_ms": 16.7,
+      "draw_calls": 50,
+      "frames_over_50ms": 0,
+      "long_tasks": 0,
+      "long_task_total_ms": 0
+    },
+    {
+      "name": "destination",
+      "samples": 79,
+      "p50_ms": 16.7,
+      "p95_ms": 16.8,
+      "max_ms": 16.8,
+      "render_samples": 43,
+      "render_p50_ms": 16.7,
+      "draw_calls": 47,
+      "frames_over_50ms": 0,
+      "long_tasks": 0,
+      "long_task_total_ms": 0
+    },
+    {
+      "name": "agent",
+      "samples": 79,
+      "p50_ms": 16.7,
+      "p95_ms": 16.7,
+      "max_ms": 16.8,
+      "render_samples": 0,
+      "render_p50_ms": 0,
+      "draw_calls": 47,
+      "frames_over_50ms": 0,
+      "long_tasks": 0,
+      "long_task_total_ms": 0
+    }
+  ]
+}

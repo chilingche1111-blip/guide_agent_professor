@@ -1,0 +1,21 @@
+{
+  "executed_at": "2026-10-01T12:07:28.495Z",
+  "checks": [
+    "Seven photo-backed destinations populate map, rail and directory; unpictured services remain outside the map",
+    "Seven-landmark directory separates academic clusters and retains keyboard dismissal",
+    "Clicking a map landmark pushes the camera and crossfades the correct photo into a full-surface background",
+    "Reverse cut restores the previous rotated map camera rather than resetting the chapter",
+    "All seven landmarks use matching real photographs; college credits link to their specific official articles",
+    "Early back and rapid successive selections cancel stale animation/image completions",
+    "Photo scene hands an unsent draft to the existing Agent and survives the return",
+    "390px full-photo scene preserves readable copy, return and Agent actions without horizontal overflow",
+    "College search opens the correct real interior on mobile without overflow",
+    "Reduced motion shows the same photo/content state without spatial animation",
+    "A failed photo keeps a usable map/service fallback rather than a blank full-screen scene",
+    "No-WebGL fallback retains the full-photo destination route and Agent entry",
+    "No uncaught browser errors"
+  ],
+  "errors": [],
+  "interactive_landmarks": 7,
+  "scope": "Synthetic headless browser functional/motion checks, not physical-device FPS"
+}

@@ -1,0 +1,163 @@
+/* Shared cold-blue palette for campus and Agent. */
+.knowledge-scope-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 12px clamp(16px, 3vw, 36px);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  background: var(--paper);
+  font-size: 14px;
+}
+.knowledge-scope-bar select {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+}
+.knowledge-scope-bar p {
+  flex: 1 1 260px;
+  margin: 0;
+  line-height: 1.6;
+}
+.knowledge-scope-bar select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+:root,
+:host {
+  --bg: #f1f5fb;
+  --paper: #fff;
+  --sidebar: #e5edf8;
+  --ink: #152c49;
+  --muted: #50647e;
+  --accent: #245bd6;
+  --accent-hover: #1846b0;
+  --accent-soft: #dce8ff;
+  --line: #d4dfee;
+  --hover: #dce6f5;
+  --art-circle: #e0eafa;
+  --art-line: #6d8fae;
+  --danger: #a24738;
+}
+:root[data-theme="dark"],
+:host([data-theme="dark"]) {
+  --bg: #101c30;
+  --paper: #172840;
+  --sidebar: #0c182c;
+  --ink: #e3edf9;
+  --muted: #b0c1d9;
+  --accent: #adcaff;
+  --accent-hover: #cbddff;
+  --accent-soft: #253f65;
+  --line: #334b69;
+  --hover: #223b5d;
+  --art-circle: #243f64;
+  --art-line: #81a4d0;
+  --danger: #f4b5a8;
+}
+.campus-return {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-size: 12px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.campus-return:hover {
+  background: var(--hover);
+}
+.brand small {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.brand-mark {
+  border-radius: 12px;
+}
+.sidebar {
+  border-right-color: var(--line);
+}
+.brand-mark svg {
+  width: 24px;
+  height: 24px;
+}
+.welcome {
+  min-height: 250px;
+}
+.welcome h1 {
+  font-size: 36px;
+  line-height: 1.55;
+}
+.serif-accent {
+  font-family: inherit;
+  font-style: normal;
+  color: var(--accent);
+}
+.serif-accent::after {
+  display: none;
+}
+.composer {
+  border-color: var(--line);
+}
+:host {
+  display: block;
+}
+:host([hidden]) {
+  display: none;
+}
+:host .welcome .explorer {
+  display: none;
+}
+:host .welcome-main {
+  padding: 20px 0;
+}
+:host .welcome h1 {
+  font-size: 38px;
+}
+:host .chat-view {
+  max-width: 1120px;
+  padding-top: 24px;
+}
+:host .welcome {
+  min-height: 240px;
+  flex: none;
+  margin: 20px 0 30px;
+}
+:host .composer-zone {
+  margin-top: auto;
+}
+:host([data-theme="dark"]) .explore-tabs img {
+  filter: invert(1);
+}
+@media (max-width: 760px) {
+  .campus-return {
+    padding: 0 8px;
+  }
+  .topbar-left {
+    gap: 8px;
+  }
+  .topbar-left > #view-title,
+  .topbar-divider {
+    display: none;
+  }
+  :host .chat-view {
+    padding: 25px 18px 14px;
+  }
+  :host .welcome {
+    margin: 12px 0 18px;
+    min-height: 220px;
+  }
+  :host .welcome h1 {
+    font-size: 30px;
+  }
+}

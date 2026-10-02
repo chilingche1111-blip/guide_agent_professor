@@ -53,6 +53,10 @@ def _split(text: str, chunk_size: int, overlap: int) -> list[str]:
             current = (current[-overlap:] if overlap else "") + unit
         else:
             current += unit
+        # Long unpunctuated uploads must not create an unbounded context chunk.
+        while len(current) > chunk_size:
+            output.append(current[:chunk_size].strip())
+            current = current[chunk_size - overlap:]
     if current.strip():
         output.append(current.strip())
     return output

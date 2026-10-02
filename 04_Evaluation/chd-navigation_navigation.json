@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-01T10:20:13.768Z",
+  "checks": [
+    "Compact guide previews3 of12 documents in less than460px",
+    "Same-document Agent entry transfers draft with no page reload",
+    "Full model configuration works inside mounted workspace",
+    "Campus canvas and Agent draft survive round trip",
+    "Browser back and forward restore correct view",
+    "Mounted Agent performs real RAG request",
+    "Isolated Agent theme toggles without corrupting campus styles",
+    "Campus assistant syncs the same conversation after return",
+    "Compact guide directly opens full12document knowledge space",
+    "Mobile navigation, reduced-motion entry, and settings remain usable",
+    "Direct Agent hash reload restores persisted conversation",
+    "No View Transition API fallback stays functional",
+    "No uncaught browser errors"
+  ],
+  "errors": []
+}

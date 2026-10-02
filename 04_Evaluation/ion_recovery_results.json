@@ -1,0 +1,9 @@
+{
+  "executed_at": "2026-10-01T12:26:48.358Z",
+  "checks": [
+    "Real WebGL context loss disables rotation affordances; restoration recovers controls and normal hint",
+    "no-webgl preserves processing/ready status and completes real RAG",
+    "module-failed preserves processing/ready status and completes real RAG"
+  ],
+  "scope": "Synthetic context-loss, initialization and module-load failure recovery"
+}

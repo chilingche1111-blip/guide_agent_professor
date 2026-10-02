@@ -1,0 +1,1641 @@
+{
+  "executed_at": "2026-10-01T09:58:23.923391+00:00",
+  "scope": "10 official-page paraphrased summaries; 20 self-authored retrieval probes, not independent human labels or live LLM/semantic-embedding evaluation. No V1 replacement.",
+  "statistics": {
+    "document_count": 10,
+    "topics": [
+      "图书馆",
+      "教务",
+      "校园卡",
+      "网络服务"
+    ],
+    "topic_count": 4,
+    "total_characters": 1851
+  },
+  "chunk_count": 20,
+  "config": {
+    "embedder": "HashingEmbedder",
+    "dimensions": 512,
+    "chunk_size": 280,
+    "overlap": 40,
+    "semantic_weight": 0.62
+  },
+  "dataset_sha256": "8a2f5b2497b06d318d9a219610a7e0fad22e3d9a5ff57f6de44fdbd669cdc18c",
+  "sources": [
+    {
+      "id": "SJ01",
+      "title": "上海交通大学校园卡补办指引摘要",
+      "topic": "校园卡",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/info/1194/2738.htm",
+      "url": "https://net.sjtu.edu.cn/info/1194/2738.htm",
+      "source_date": "2026-04-24",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ01_card_replace.md",
+      "sha256": "6a15752626f1a7a2326d4f66a1a068e9a982fa91e2db3bdffc870281bbeda705"
+    },
+    {
+      "id": "SJ02",
+      "title": "上海交通大学校园卡挂失与解挂摘要",
+      "topic": "校园卡",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/info/1194/2739.htm",
+      "url": "https://net.sjtu.edu.cn/info/1194/2739.htm",
+      "source_date": "2025-01-16",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ02_card_lost.md",
+      "sha256": "737e7f49ff214f26cf8371745498804f3bdcd9e8cb980676b8d8fd20e23ebd7f"
+    },
+    {
+      "id": "SJ03",
+      "title": "上海交通大学校园卡免密限额摘要",
+      "topic": "校园卡",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/info/1194/2733.htm",
+      "url": "https://net.sjtu.edu.cn/info/1194/2733.htm",
+      "source_date": "2025-10-20",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ03_card_limit.md",
+      "sha256": "dc1c9ba9bdcf7bcb0ab66358b68aece0e816b6589ee23b67c9758f9787ebde0c"
+    },
+    {
+      "id": "SJ04",
+      "title": "上海交通大学校园卡余额及消费明细摘要",
+      "topic": "校园卡",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/info/1194/2734.htm",
+      "url": "https://net.sjtu.edu.cn/info/1194/2734.htm",
+      "source_date": "2025-01-16",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ04_card_balance.md",
+      "sha256": "0bf6158918ddba901faa18cd02696e1229b3ab92cb4b01a9ca1d9011afa85456"
+    },
+    {
+      "id": "SJ05",
+      "title": "上海交通大学校园卡充值摘要",
+      "topic": "校园卡",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/info/1194/3226.htm",
+      "url": "https://net.sjtu.edu.cn/info/1194/3226.htm",
+      "source_date": "2024-12-10",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ05_card_recharge.md",
+      "sha256": "1e9ecf2233fcf7360bba80917748a9151fdef90af7a8649568fb366cc5293b15"
+    },
+    {
+      "id": "SJ06",
+      "title": "上海交通大学校园卡密码重置摘要",
+      "topic": "校园卡",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/info/1193/6778.htm",
+      "url": "https://net.sjtu.edu.cn/info/1193/6778.htm",
+      "source_date": "2025-12-30",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ06_card_password.md",
+      "sha256": "3e6c317de6e7b48b844237e056cef1dead6dcd17c31ecd330106427f2acf64e4"
+    },
+    {
+      "id": "SJ07",
+      "title": "上海交通大学旧校园卡激活摘要",
+      "topic": "校园卡",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/info/1193/6028.htm",
+      "url": "https://net.sjtu.edu.cn/info/1193/6028.htm",
+      "source_date": "2025-04-14",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ07_card_reactivate.md",
+      "sha256": "20182982fea5e866d5b3984536907274a12b337e9e63bb128772f54d090ac371"
+    },
+    {
+      "id": "SJ08",
+      "title": "上海交通大学VPN服务摘要",
+      "topic": "网络服务",
+      "school": "上海交通大学",
+      "source": "上海交通大学网络信息中心 https://net.sjtu.edu.cn/wlfw/VPN.htm",
+      "url": "https://net.sjtu.edu.cn/wlfw/VPN.htm",
+      "source_date": "unknown",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ08_vpn.md",
+      "sha256": "f626c8f187c829019f1c899eab94464f9ce57e13172641076921b16bcbd44902"
+    },
+    {
+      "id": "SJ09",
+      "title": "上海交通大学本科生缓考办法摘要",
+      "topic": "教务",
+      "school": "上海交通大学",
+      "source": "上海交通大学教务处 https://jwc.sjtu.edu.cn/info/3801/126251.htm",
+      "url": "https://jwc.sjtu.edu.cn/info/3801/126251.htm",
+      "source_date": "2026-05-14",
+      "policy_version": "2024-04修订，自2024-09-01施行",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ09_exam_deferral.md",
+      "sha256": "c4bc3e9b949ae2dcdcbcc5c82b363005b0b8a9e2aa9aa19d83226c5da7b7be6c"
+    },
+    {
+      "id": "SJ10",
+      "title": "上海交通大学图书馆新生指南摘要",
+      "topic": "图书馆",
+      "school": "上海交通大学",
+      "source": "上海交通大学图书馆 https://www.lib.sjtu.edu.cn/fresh/xinsheng.html",
+      "url": "https://www.lib.sjtu.edu.cn/fresh/xinsheng.html",
+      "source_date": "unknown",
+      "retrieved_at": "2026-10-01",
+      "content_type": "paraphrased_summary",
+      "file": "SJ10_library.md",
+      "sha256": "b2812efc9e511a93bf90fb493338e9b3de40a3434f440cdcb6663222582967f8"
+    }
+  ],
+  "metrics": {
+    "all": {
+      "recall@1": 0.9,
+      "recall@3": 0.95,
+      "recall@5": 0.95
+    },
+    "direct": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0
+    },
+    "paraphrase": {
+      "recall@1": 0.8,
+      "recall@3": 0.9,
+      "recall@5": 0.9
+    }
+  },
+  "rows": [
+    {
+      "id": "SJQ01",
+      "question": "校园卡补办预约后用什么取卡？",
+      "expected_source": "SJ01",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.5072,
+          "vector_score": 0.4605,
+          "lexical_score": 0.5833
+        },
+        {
+          "chunk_id": "SJ01-C01",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "丢卡后的处理",
+          "text": "上海交通大学校园卡遗失后，应先挂失，再补领卡片。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.4302,
+          "vector_score": 0.4385,
+          "lexical_score": 0.4167
+        },
+        {
+          "chunk_id": "SJ07-C01",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "有效身份与单卡规则",
+          "text": "上海交通大学旧卡对应的在校身份仍有效时，可在自助机激活旧卡。同一时期只能有一张有效校园卡，激活旧卡会使已补办的新卡立即失效。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.3637,
+          "vector_score": 0.3823,
+          "lexical_score": 0.3333
+        },
+        {
+          "chunk_id": "SJ02-C01",
+          "source_id": "SJ02",
+          "title": "上海交通大学校园卡挂失与解挂摘要",
+          "topic": "校园卡",
+          "section": "线上途径",
+          "text": "在上海交通大学交我办PC版，可进入信息服务下的校园卡查询和挂失服务。手机端可在交我办App的信息服务中打开我的校园卡，办理挂失或解挂。",
+          "source_path": "SJ02_card_lost.md",
+          "score": 0.285,
+          "vector_score": 0.3064,
+          "lexical_score": 0.25
+        },
+        {
+          "chunk_id": "SJ07-C02",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "操作途径",
+          "text": "在自助机选择旧卡激活，使用账户信息或交我办扫码验证，按提示将旧卡放到读卡区并确认激活。是否执行应由本人决定，本助手不能替代身份验证。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.2827,
+          "vector_score": 0.2772,
+          "lexical_score": 0.2917
+        }
+      ]
+    },
+    {
+      "id": "SJQ02",
+      "question": "手机预约领新卡，还需要输入卡密码吗？",
+      "expected_source": "SJ01",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.407,
+          "vector_score": 0.3909,
+          "lexical_score": 0.4333
+        },
+        {
+          "chunk_id": "SJ06-C01",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "重置流程",
+          "text": "上海交通大学持卡人可到自助终端选择修改密码，使用交我办App扫描设备二维码完成身份验证，再设置并确认六位新密码。先修改的是查询密码；修改消费密码还需要按设备提示放卡操作。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.3666,
+          "vector_score": 0.3665,
+          "lexical_score": 0.3667
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2623,
+          "vector_score": 0.28,
+          "lexical_score": 0.2333
+        },
+        {
+          "chunk_id": "SJ07-C01",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "有效身份与单卡规则",
+          "text": "上海交通大学旧卡对应的在校身份仍有效时，可在自助机激活旧卡。同一时期只能有一张有效校园卡，激活旧卡会使已补办的新卡立即失效。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.2082,
+          "vector_score": 0.2336,
+          "lexical_score": 0.1667
+        },
+        {
+          "chunk_id": "SJ08-C02",
+          "source_id": "SJ08",
+          "title": "上海交通大学VPN服务摘要",
+          "topic": "网络服务",
+          "section": "使用注意",
+          "text": "官方页面提供客户端及操作系统配置指引。服务限制并发连接，建议使用结束后断开，避免影响之后连接。应只从学校官方入口获取安装说明和客户端，不向本助手提供账号密码。页面混有新旧平台说明，具体系统配置须打开原网页核对。",
+          "source_path": "SJ08_vpn.md",
+          "score": 0.202,
+          "vector_score": 0.1828,
+          "lexical_score": 0.2333
+        }
+      ]
+    },
+    {
+      "id": "SJQ03",
+      "question": "校园卡挂失解挂可以在哪里操作？",
+      "expected_source": "SJ02",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ02-C01",
+          "source_id": "SJ02",
+          "title": "上海交通大学校园卡挂失与解挂摘要",
+          "topic": "校园卡",
+          "section": "线上途径",
+          "text": "在上海交通大学交我办PC版，可进入信息服务下的校园卡查询和挂失服务。手机端可在交我办App的信息服务中打开我的校园卡，办理挂失或解挂。",
+          "source_path": "SJ02_card_lost.md",
+          "score": 0.4589,
+          "vector_score": 0.4337,
+          "lexical_score": 0.5
+        },
+        {
+          "chunk_id": "SJ02-C02",
+          "source_id": "SJ02",
+          "title": "上海交通大学校园卡挂失与解挂摘要",
+          "topic": "校园卡",
+          "section": "线下途径",
+          "text": "挂失也可在校内自助设备办理，包括闵行网络信息中心和学生中心、徐汇网络信息中心的自助机，以及餐厅圈存机。本文只提供指引，不代替持卡人进行身份验证或实际挂失。",
+          "source_path": "SJ02_card_lost.md",
+          "score": 0.4331,
+          "vector_score": 0.3685,
+          "lexical_score": 0.5385
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.338,
+          "vector_score": 0.3094,
+          "lexical_score": 0.3846
+        },
+        {
+          "chunk_id": "SJ01-C01",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "丢卡后的处理",
+          "text": "上海交通大学校园卡遗失后，应先挂失，再补领卡片。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.323,
+          "vector_score": 0.3325,
+          "lexical_score": 0.3077
+        },
+        {
+          "chunk_id": "SJ03-C02",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "调整方式",
+          "text": "持卡人可以带校园卡到校内自助设备调整消费限额。摘要不推断未在该页面列出的可设最高金额或其他学校的规则。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.3105,
+          "vector_score": 0.2886,
+          "lexical_score": 0.3462
+        }
+      ]
+    },
+    {
+      "id": "SJQ04",
+      "question": "卡丢了，能不能先在手机上停用？",
+      "expected_source": "SJ02",
+      "kind": "paraphrase",
+      "hits": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ07-C02",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "操作途径",
+          "text": "在自助机选择旧卡激活，使用账户信息或交我办扫码验证，按提示将旧卡放到读卡区并确认激活。是否执行应由本人决定，本助手不能替代身份验证。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.2889,
+          "vector_score": 0.2362,
+          "lexical_score": 0.375
+        },
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.2632,
+          "vector_score": 0.2458,
+          "lexical_score": 0.2917
+        },
+        {
+          "chunk_id": "SJ04-C02",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "自助设备查询",
+          "text": "校内补卡机、餐厅圈存机也提供查询途径。自助设备位于闵行网络信息中心、学生中心大楼和徐汇网络信息中心等位置。本助手不能读取真实账户余额或个人消费明细。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.2325,
+          "vector_score": 0.1963,
+          "lexical_score": 0.2917
+        },
+        {
+          "chunk_id": "SJ07-C01",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "有效身份与单卡规则",
+          "text": "上海交通大学旧卡对应的在校身份仍有效时，可在自助机激活旧卡。同一时期只能有一张有效校园卡，激活旧卡会使已补办的新卡立即失效。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.2286,
+          "vector_score": 0.241,
+          "lexical_score": 0.2083
+        },
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.2222,
+          "vector_score": 0.2307,
+          "lexical_score": 0.2083
+        }
+      ]
+    },
+    {
+      "id": "SJQ05",
+      "question": "校园卡免密消费限额是多少？",
+      "expected_source": "SJ03",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ03-C01",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "默认限额",
+          "text": "上海交通大学页面说明，校园卡免输密码消费按每个餐段累计计算，默认上限是30元，而不是每笔交易30元。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.5491,
+          "vector_score": 0.4594,
+          "lexical_score": 0.6957
+        },
+        {
+          "chunk_id": "SJ03-C02",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "调整方式",
+          "text": "持卡人可以带校园卡到校内自助设备调整消费限额。摘要不推断未在该页面列出的可设最高金额或其他学校的规则。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.5264,
+          "vector_score": 0.4227,
+          "lexical_score": 0.6957
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.3344,
+          "vector_score": 0.2995,
+          "lexical_score": 0.3913
+        },
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.3175,
+          "vector_score": 0.2456,
+          "lexical_score": 0.4348
+        },
+        {
+          "chunk_id": "SJ04-C02",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "自助设备查询",
+          "text": "校内补卡机、餐厅圈存机也提供查询途径。自助设备位于闵行网络信息中心、学生中心大楼和徐汇网络信息中心等位置。本助手不能读取真实账户余额或个人消费明细。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.3041,
+          "vector_score": 0.2506,
+          "lexical_score": 0.3913
+        }
+      ]
+    },
+    {
+      "id": "SJQ06",
+      "question": "饭卡不用输密码的额度是按一笔还是一顿饭累计？",
+      "expected_source": "SJ03",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ03-C01",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "默认限额",
+          "text": "上海交通大学页面说明，校园卡免输密码消费按每个餐段累计计算，默认上限是30元，而不是每笔交易30元。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.3081,
+          "vector_score": 0.2711,
+          "lexical_score": 0.3684
+        },
+        {
+          "chunk_id": "SJ06-C01",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "重置流程",
+          "text": "上海交通大学持卡人可到自助终端选择修改密码，使用交我办App扫描设备二维码完成身份验证，再设置并确认六位新密码。先修改的是查询密码；修改消费密码还需要按设备提示放卡操作。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2668,
+          "vector_score": 0.2852,
+          "lexical_score": 0.2368
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2263,
+          "vector_score": 0.2682,
+          "lexical_score": 0.1579
+        },
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.2231,
+          "vector_score": 0.2631,
+          "lexical_score": 0.1579
+        },
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.1785,
+          "vector_score": 0.2073,
+          "lexical_score": 0.1316
+        }
+      ]
+    },
+    {
+      "id": "SJQ07",
+      "question": "校园卡余额及消费明细在哪里查询？",
+      "expected_source": "SJ04",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.5619,
+          "vector_score": 0.4203,
+          "lexical_score": 0.7931
+        },
+        {
+          "chunk_id": "SJ04-C02",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "自助设备查询",
+          "text": "校内补卡机、餐厅圈存机也提供查询途径。自助设备位于闵行网络信息中心、学生中心大楼和徐汇网络信息中心等位置。本助手不能读取真实账户余额或个人消费明细。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.5588,
+          "vector_score": 0.4363,
+          "lexical_score": 0.7586
+        },
+        {
+          "chunk_id": "SJ03-C02",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "调整方式",
+          "text": "持卡人可以带校园卡到校内自助设备调整消费限额。摘要不推断未在该页面列出的可设最高金额或其他学校的规则。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.3333,
+          "vector_score": 0.3263,
+          "lexical_score": 0.3448
+        },
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.3175,
+          "vector_score": 0.2584,
+          "lexical_score": 0.4138
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.3096,
+          "vector_score": 0.288,
+          "lexical_score": 0.3448
+        }
+      ]
+    },
+    {
+      "id": "SJQ08",
+      "question": "想查卡里还剩多少钱和花费记录，有哪些入口？",
+      "expected_source": "SJ04",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.1957,
+          "vector_score": 0.2163,
+          "lexical_score": 0.1622
+        },
+        {
+          "chunk_id": "SJ08-C02",
+          "source_id": "SJ08",
+          "title": "上海交通大学VPN服务摘要",
+          "topic": "网络服务",
+          "section": "使用注意",
+          "text": "官方页面提供客户端及操作系统配置指引。服务限制并发连接，建议使用结束后断开，避免影响之后连接。应只从学校官方入口获取安装说明和客户端，不向本助手提供账号密码。页面混有新旧平台说明，具体系统配置须打开原网页核对。",
+          "source_path": "SJ08_vpn.md",
+          "score": 0.1737,
+          "vector_score": 0.1973,
+          "lexical_score": 0.1351
+        },
+        {
+          "chunk_id": "SJ03-C01",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "默认限额",
+          "text": "上海交通大学页面说明，校园卡免输密码消费按每个餐段累计计算，默认上限是30元，而不是每笔交易30元。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.1609,
+          "vector_score": 0.2264,
+          "lexical_score": 0.0541
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.1523,
+          "vector_score": 0.1794,
+          "lexical_score": 0.1081
+        },
+        {
+          "chunk_id": "SJ03-C02",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "调整方式",
+          "text": "持卡人可以带校园卡到校内自助设备调整消费限额。摘要不推断未在该页面列出的可设最高金额或其他学校的规则。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.1514,
+          "vector_score": 0.2111,
+          "lexical_score": 0.0541
+        }
+      ]
+    },
+    {
+      "id": "SJQ09",
+      "question": "校园卡充值后怎样同步余额？",
+      "expected_source": "SJ05",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.5796,
+          "vector_score": 0.4818,
+          "lexical_score": 0.7391
+        },
+        {
+          "chunk_id": "SJ05-C01",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "充值途径",
+          "text": "上海交通大学官方介绍交我办App、支付宝校园一卡通服务及校内现金充值点三种途径。支付宝需要选择对应学校，再填写持卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.3467,
+          "vector_score": 0.3193,
+          "lexical_score": 0.3913
+        },
+        {
+          "chunk_id": "SJ01-C01",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "丢卡后的处理",
+          "text": "上海交通大学校园卡遗失后，应先挂失，再补领卡片。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.3211,
+          "vector_score": 0.3581,
+          "lexical_score": 0.2609
+        },
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.2627,
+          "vector_score": 0.2105,
+          "lexical_score": 0.3478
+        },
+        {
+          "chunk_id": "SJ04-C02",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "自助设备查询",
+          "text": "校内补卡机、餐厅圈存机也提供查询途径。自助设备位于闵行网络信息中心、学生中心大楼和徐汇网络信息中心等位置。本助手不能读取真实账户余额或个人消费明细。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.2609,
+          "vector_score": 0.2076,
+          "lexical_score": 0.3478
+        }
+      ]
+    },
+    {
+      "id": "SJQ10",
+      "question": "夜里十二点给饭卡充钱可以吗？",
+      "expected_source": "SJ05",
+      "kind": "paraphrase",
+      "hits": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ03-C02",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "调整方式",
+          "text": "持卡人可以带校园卡到校内自助设备调整消费限额。摘要不推断未在该页面列出的可设最高金额或其他学校的规则。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.1949,
+          "vector_score": 0.2162,
+          "lexical_score": 0.16
+        },
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.184,
+          "vector_score": 0.1988,
+          "lexical_score": 0.16
+        },
+        {
+          "chunk_id": "SJ05-C01",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "充值途径",
+          "text": "上海交通大学官方介绍交我办App、支付宝校园一卡通服务及校内现金充值点三种途径。支付宝需要选择对应学校，再填写持卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.1781,
+          "vector_score": 0.1892,
+          "lexical_score": 0.16
+        },
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.1651,
+          "vector_score": 0.1927,
+          "lexical_score": 0.12
+        },
+        {
+          "chunk_id": "SJ07-C01",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "有效身份与单卡规则",
+          "text": "上海交通大学旧卡对应的在校身份仍有效时，可在自助机激活旧卡。同一时期只能有一张有效校园卡，激活旧卡会使已补办的新卡立即失效。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.1635,
+          "vector_score": 0.2147,
+          "lexical_score": 0.08
+        }
+      ]
+    },
+    {
+      "id": "SJQ11",
+      "question": "忘记校园卡密码如何重置？",
+      "expected_source": "SJ06",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ06-C01",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "重置流程",
+          "text": "上海交通大学持卡人可到自助终端选择修改密码，使用交我办App扫描设备二维码完成身份验证，再设置并确认六位新密码。先修改的是查询密码；修改消费密码还需要按设备提示放卡操作。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.4816,
+          "vector_score": 0.4266,
+          "lexical_score": 0.5714
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.4762,
+          "vector_score": 0.3886,
+          "lexical_score": 0.619
+        },
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.382,
+          "vector_score": 0.3534,
+          "lexical_score": 0.4286
+        },
+        {
+          "chunk_id": "SJ03-C01",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "默认限额",
+          "text": "上海交通大学页面说明，校园卡免输密码消费按每个餐段累计计算，默认上限是30元，而不是每笔交易30元。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.3217,
+          "vector_score": 0.2854,
+          "lexical_score": 0.381
+        },
+        {
+          "chunk_id": "SJ07-C01",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "有效身份与单卡规则",
+          "text": "上海交通大学旧卡对应的在校身份仍有效时，可在自助机激活旧卡。同一时期只能有一张有效校园卡，激活旧卡会使已补办的新卡立即失效。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.2866,
+          "vector_score": 0.3163,
+          "lexical_score": 0.2381
+        }
+      ]
+    },
+    {
+      "id": "SJQ12",
+      "question": "扫码设好查询口令后，消费口令会自动更改吗？",
+      "expected_source": "SJ06",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ06-C01",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "重置流程",
+          "text": "上海交通大学持卡人可到自助终端选择修改密码，使用交我办App扫描设备二维码完成身份验证，再设置并确认六位新密码。先修改的是查询密码；修改消费密码还需要按设备提示放卡操作。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2841,
+          "vector_score": 0.2599,
+          "lexical_score": 0.3235
+        },
+        {
+          "chunk_id": "SJ04-C02",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "自助设备查询",
+          "text": "校内补卡机、餐厅圈存机也提供查询途径。自助设备位于闵行网络信息中心、学生中心大楼和徐汇网络信息中心等位置。本助手不能读取真实账户余额或个人消费明细。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.2341,
+          "vector_score": 0.2333,
+          "lexical_score": 0.2353
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.1818,
+          "vector_score": 0.1489,
+          "lexical_score": 0.2353
+        },
+        {
+          "chunk_id": "SJ03-C02",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "调整方式",
+          "text": "持卡人可以带校园卡到校内自助设备调整消费限额。摘要不推断未在该页面列出的可设最高金额或其他学校的规则。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.1709,
+          "vector_score": 0.1855,
+          "lexical_score": 0.1471
+        },
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.1641,
+          "vector_score": 0.1204,
+          "lexical_score": 0.2353
+        }
+      ]
+    },
+    {
+      "id": "SJQ13",
+      "question": "激活旧校园卡后新卡还能用吗？",
+      "expected_source": "SJ07",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ07-C01",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "有效身份与单卡规则",
+          "text": "上海交通大学旧卡对应的在校身份仍有效时，可在自助机激活旧卡。同一时期只能有一张有效校园卡，激活旧卡会使已补办的新卡立即失效。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.5227,
+          "vector_score": 0.4856,
+          "lexical_score": 0.5833
+        },
+        {
+          "chunk_id": "SJ07-C02",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "操作途径",
+          "text": "在自助机选择旧卡激活，使用账户信息或交我办扫码验证，按提示将旧卡放到读卡区并确认激活。是否执行应由本人决定，本助手不能替代身份验证。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.4216,
+          "vector_score": 0.3736,
+          "lexical_score": 0.5
+        },
+        {
+          "chunk_id": "SJ01-C01",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "丢卡后的处理",
+          "text": "上海交通大学校园卡遗失后，应先挂失，再补领卡片。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.3245,
+          "vector_score": 0.3446,
+          "lexical_score": 0.2917
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2801,
+          "vector_score": 0.2985,
+          "lexical_score": 0.25
+        },
+        {
+          "chunk_id": "SJ06-C01",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "重置流程",
+          "text": "上海交通大学持卡人可到自助终端选择修改密码，使用交我办App扫描设备二维码完成身份验证，再设置并确认六位新密码。先修改的是查询密码；修改消费密码还需要按设备提示放卡操作。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2642,
+          "vector_score": 0.2219,
+          "lexical_score": 0.3333
+        }
+      ]
+    },
+    {
+      "id": "SJQ14",
+      "question": "补领之后又找回原来的卡，可以让两张一起生效吗？",
+      "expected_source": "SJ07",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ07-C01",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "有效身份与单卡规则",
+          "text": "上海交通大学旧卡对应的在校身份仍有效时，可在自助机激活旧卡。同一时期只能有一张有效校园卡，激活旧卡会使已补办的新卡立即失效。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.2542,
+          "vector_score": 0.3054,
+          "lexical_score": 0.1707
+        },
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.2232,
+          "vector_score": 0.2255,
+          "lexical_score": 0.2195
+        },
+        {
+          "chunk_id": "SJ01-C01",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "丢卡后的处理",
+          "text": "上海交通大学校园卡遗失后，应先挂失，再补领卡片。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.2028,
+          "vector_score": 0.2374,
+          "lexical_score": 0.1463
+        },
+        {
+          "chunk_id": "SJ03-C02",
+          "source_id": "SJ03",
+          "title": "上海交通大学校园卡免密限额摘要",
+          "topic": "校园卡",
+          "section": "调整方式",
+          "text": "持卡人可以带校园卡到校内自助设备调整消费限额。摘要不推断未在该页面列出的可设最高金额或其他学校的规则。",
+          "source_path": "SJ03_card_limit.md",
+          "score": 0.1869,
+          "vector_score": 0.2267,
+          "lexical_score": 0.122
+        },
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.1751,
+          "vector_score": 0.2226,
+          "lexical_score": 0.0976
+        }
+      ]
+    },
+    {
+      "id": "SJQ15",
+      "question": "交大VPN需要申请开通吗？",
+      "expected_source": "SJ08",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ08-C01",
+          "source_id": "SJ08",
+          "title": "上海交通大学VPN服务摘要",
+          "topic": "网络服务",
+          "section": "对象及开通",
+          "text": "上海交通大学为在校学生及教职工提供访问校内资源的免费VPN服务。申请jAccount后自动开通，VPN用户名与该账号一致。",
+          "source_path": "SJ08_vpn.md",
+          "score": 0.407,
+          "vector_score": 0.3159,
+          "lexical_score": 0.5556
+        },
+        {
+          "chunk_id": "SJ09-C01",
+          "source_id": "SJ09",
+          "title": "上海交通大学本科生缓考办法摘要",
+          "topic": "教务",
+          "section": "申请与证明",
+          "text": "上海交通大学本科生原则上应在考试前通过教学信息服务网提交缓考申请并附证明。因突发疾病申请时，病假证明需来自校医院或二级甲等以上医院，并覆盖考试时段。",
+          "source_path": "SJ09_exam_deferral.md",
+          "score": 0.3948,
+          "vector_score": 0.3304,
+          "lexical_score": 0.5
+        },
+        {
+          "chunk_id": "SJ06-C01",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "重置流程",
+          "text": "上海交通大学持卡人可到自助终端选择修改密码，使用交我办App扫描设备二维码完成身份验证，再设置并确认六位新密码。先修改的是查询密码；修改消费密码还需要按设备提示放卡操作。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2512,
+          "vector_score": 0.2008,
+          "lexical_score": 0.3333
+        },
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.2495,
+          "vector_score": 0.164,
+          "lexical_score": 0.3889
+        },
+        {
+          "chunk_id": "SJ05-C01",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "充值途径",
+          "text": "上海交通大学官方介绍交我办App、支付宝校园一卡通服务及校内现金充值点三种途径。支付宝需要选择对应学校，再填写持卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.2476,
+          "vector_score": 0.1951,
+          "lexical_score": 0.3333
+        }
+      ]
+    },
+    {
+      "id": "SJQ16",
+      "question": "在家访问校内资源的网络账号和jAccount一样吗？",
+      "expected_source": "SJ08",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ08-C01",
+          "source_id": "SJ08",
+          "title": "上海交通大学VPN服务摘要",
+          "topic": "网络服务",
+          "section": "对象及开通",
+          "text": "上海交通大学为在校学生及教职工提供访问校内资源的免费VPN服务。申请jAccount后自动开通，VPN用户名与该账号一致。",
+          "source_path": "SJ08_vpn.md",
+          "score": 0.406,
+          "vector_score": 0.3123,
+          "lexical_score": 0.5588
+        },
+        {
+          "chunk_id": "SJ04-C02",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "自助设备查询",
+          "text": "校内补卡机、餐厅圈存机也提供查询途径。自助设备位于闵行网络信息中心、学生中心大楼和徐汇网络信息中心等位置。本助手不能读取真实账户余额或个人消费明细。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.2501,
+          "vector_score": 0.2592,
+          "lexical_score": 0.2353
+        },
+        {
+          "chunk_id": "SJ02-C02",
+          "source_id": "SJ02",
+          "title": "上海交通大学校园卡挂失与解挂摘要",
+          "topic": "校园卡",
+          "section": "线下途径",
+          "text": "挂失也可在校内自助设备办理，包括闵行网络信息中心和学生中心、徐汇网络信息中心的自助机，以及餐厅圈存机。本文只提供指引，不代替持卡人进行身份验证或实际挂失。",
+          "source_path": "SJ02_card_lost.md",
+          "score": 0.2451,
+          "vector_score": 0.2331,
+          "lexical_score": 0.2647
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.2303,
+          "vector_score": 0.2453,
+          "lexical_score": 0.2059
+        },
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.2279,
+          "vector_score": 0.2413,
+          "lexical_score": 0.2059
+        }
+      ]
+    },
+    {
+      "id": "SJQ17",
+      "question": "本科生缓考申请应何时提交？",
+      "expected_source": "SJ09",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ09-C01",
+          "source_id": "SJ09",
+          "title": "上海交通大学本科生缓考办法摘要",
+          "topic": "教务",
+          "section": "申请与证明",
+          "text": "上海交通大学本科生原则上应在考试前通过教学信息服务网提交缓考申请并附证明。因突发疾病申请时，病假证明需来自校医院或二级甲等以上医院，并覆盖考试时段。",
+          "source_path": "SJ09_exam_deferral.md",
+          "score": 0.586,
+          "vector_score": 0.4655,
+          "lexical_score": 0.7826
+        },
+        {
+          "chunk_id": "SJ09-C02",
+          "source_id": "SJ09",
+          "title": "上海交通大学本科生缓考办法摘要",
+          "topic": "教务",
+          "section": "审批与特殊情况",
+          "text": "院系教学秘书审核后由教务处审批。确因突发事件不能提前办理时，应在考试期间报告辅导员或教学秘书并获批准，由其在考试结束前报教务处代办。通过审批后原则上不能撤销。通选课、重修免修考及过程性考试不在适用范围；其余条件请核对原办法。",
+          "source_path": "SJ09_exam_deferral.md",
+          "score": 0.4022,
+          "vector_score": 0.2756,
+          "lexical_score": 0.6087
+        },
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.2141,
+          "vector_score": 0.2121,
+          "lexical_score": 0.2174
+        },
+        {
+          "chunk_id": "SJ07-C02",
+          "source_id": "SJ07",
+          "title": "上海交通大学旧校园卡激活摘要",
+          "topic": "校园卡",
+          "section": "操作途径",
+          "text": "在自助机选择旧卡激活，使用账户信息或交我办扫码验证，按提示将旧卡放到读卡区并确认激活。是否执行应由本人决定，本助手不能替代身份验证。",
+          "source_path": "SJ07_card_reactivate.md",
+          "score": 0.2118,
+          "vector_score": 0.235,
+          "lexical_score": 0.1739
+        },
+        {
+          "chunk_id": "SJ08-C01",
+          "source_id": "SJ08",
+          "title": "上海交通大学VPN服务摘要",
+          "topic": "网络服务",
+          "section": "对象及开通",
+          "text": "上海交通大学为在校学生及教职工提供访问校内资源的免费VPN服务。申请jAccount后自动开通，VPN用户名与该账号一致。",
+          "source_path": "SJ08_vpn.md",
+          "score": 0.2086,
+          "vector_score": 0.1765,
+          "lexical_score": 0.2609
+        }
+      ]
+    },
+    {
+      "id": "SJQ18",
+      "question": "突然生病赶不上考试，需要哪种医院的证明？",
+      "expected_source": "SJ09",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ09-C01",
+          "source_id": "SJ09",
+          "title": "上海交通大学本科生缓考办法摘要",
+          "topic": "教务",
+          "section": "申请与证明",
+          "text": "上海交通大学本科生原则上应在考试前通过教学信息服务网提交缓考申请并附证明。因突发疾病申请时，病假证明需来自校医院或二级甲等以上医院，并覆盖考试时段。",
+          "source_path": "SJ09_exam_deferral.md",
+          "score": 0.4274,
+          "vector_score": 0.4268,
+          "lexical_score": 0.4286
+        },
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.2557,
+          "vector_score": 0.2723,
+          "lexical_score": 0.2286
+        },
+        {
+          "chunk_id": "SJ09-C02",
+          "source_id": "SJ09",
+          "title": "上海交通大学本科生缓考办法摘要",
+          "topic": "教务",
+          "section": "审批与特殊情况",
+          "text": "院系教学秘书审核后由教务处审批。确因突发事件不能提前办理时，应在考试期间报告辅导员或教学秘书并获批准，由其在考试结束前报教务处代办。通过审批后原则上不能撤销。通选课、重修免修考及过程性考试不在适用范围；其余条件请核对原办法。",
+          "source_path": "SJ09_exam_deferral.md",
+          "score": 0.2549,
+          "vector_score": 0.2535,
+          "lexical_score": 0.2571
+        },
+        {
+          "chunk_id": "SJ05-C02",
+          "source_id": "SJ05",
+          "title": "上海交通大学校园卡充值摘要",
+          "topic": "校园卡",
+          "section": "余额同步与时间限制",
+          "text": "在线充值后，需要在食堂支持实体卡的消费机具刷卡同步金额，刷卡同步本身不必消费。页面提醒每日23:00至次日05:00不要充值。本系统不收款、不代充，不请求银行卡信息。",
+          "source_path": "SJ05_card_recharge.md",
+          "score": 0.1906,
+          "vector_score": 0.2024,
+          "lexical_score": 0.1714
+        },
+        {
+          "chunk_id": "SJ06-C02",
+          "source_id": "SJ06",
+          "title": "上海交通大学校园卡密码重置摘要",
+          "topic": "校园卡",
+          "section": "适用边界",
+          "text": "该扫码流程不适用于校友卡和不记名消费卡等类型。无法自助重置时，可带校园卡及身份证件到网络信息中心处理。请在官方设备操作，不向聊天助手提供证件号或密码。",
+          "source_path": "SJ06_card_password.md",
+          "score": 0.1898,
+          "vector_score": 0.2361,
+          "lexical_score": 0.1143
+        }
+      ]
+    },
+    {
+      "id": "SJQ19",
+      "question": "图书馆新生指南中的开放时间是什么？",
+      "expected_source": "SJ10",
+      "kind": "direct",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ10-C01",
+          "source_id": "SJ10",
+          "title": "上海交通大学图书馆新生指南摘要",
+          "topic": "图书馆",
+          "section": "开放时间",
+          "text": "采集时上海交通大学图书馆新生指南列出通常开放时段为每天08:00至22:30。节假日及特殊情况另有安排，应查看图书馆官网、官方微信公众号或现场通知，不能将常规时间当作节假日保证。",
+          "source_path": "SJ10_library.md",
+          "score": 0.585,
+          "vector_score": 0.5482,
+          "lexical_score": 0.6452
+        },
+        {
+          "chunk_id": "SJ10-C02",
+          "source_id": "SJ10",
+          "title": "上海交通大学图书馆新生指南摘要",
+          "topic": "图书馆",
+          "section": "借阅及预约",
+          "text": "页面对计划内学生列出普通外借周期30天、续借周期30天；册数和续借次数列为不限。预约图书到达后在预约架保留一周，通知可在交我办消息或我的图书馆查看。具体资源例外与当前执行情况以馆方规定为准。",
+          "source_path": "SJ10_library.md",
+          "score": 0.356,
+          "vector_score": 0.2974,
+          "lexical_score": 0.4516
+        },
+        {
+          "chunk_id": "SJ02-C02",
+          "source_id": "SJ02",
+          "title": "上海交通大学校园卡挂失与解挂摘要",
+          "topic": "校园卡",
+          "section": "线下途径",
+          "text": "挂失也可在校内自助设备办理，包括闵行网络信息中心和学生中心、徐汇网络信息中心的自助机，以及餐厅圈存机。本文只提供指引，不代替持卡人进行身份验证或实际挂失。",
+          "source_path": "SJ02_card_lost.md",
+          "score": 0.1959,
+          "vector_score": 0.2369,
+          "lexical_score": 0.129
+        },
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.1686,
+          "vector_score": 0.173,
+          "lexical_score": 0.1613
+        },
+        {
+          "chunk_id": "SJ08-C02",
+          "source_id": "SJ08",
+          "title": "上海交通大学VPN服务摘要",
+          "topic": "网络服务",
+          "section": "使用注意",
+          "text": "官方页面提供客户端及操作系统配置指引。服务限制并发连接，建议使用结束后断开，避免影响之后连接。应只从学校官方入口获取安装说明和客户端，不向本助手提供账号密码。页面混有新旧平台说明，具体系统配置须打开原网页核对。",
+          "source_path": "SJ08_vpn.md",
+          "score": 0.1609,
+          "vector_score": 0.2002,
+          "lexical_score": 0.0968
+        }
+      ]
+    },
+    {
+      "id": "SJQ20",
+      "question": "预约到的书在架子上等我多久？",
+      "expected_source": "SJ10",
+      "kind": "paraphrase",
+      "hits": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "retrieval": [
+        {
+          "chunk_id": "SJ10-C02",
+          "source_id": "SJ10",
+          "title": "上海交通大学图书馆新生指南摘要",
+          "topic": "图书馆",
+          "section": "借阅及预约",
+          "text": "页面对计划内学生列出普通外借周期30天、续借周期30天；册数和续借次数列为不限。预约图书到达后在预约架保留一周，通知可在交我办消息或我的图书馆查看。具体资源例外与当前执行情况以馆方规定为准。",
+          "source_path": "SJ10_library.md",
+          "score": 0.3682,
+          "vector_score": 0.3488,
+          "lexical_score": 0.4
+        },
+        {
+          "chunk_id": "SJ01-C02",
+          "source_id": "SJ01",
+          "title": "上海交通大学校园卡补办指引摘要",
+          "topic": "校园卡",
+          "section": "预约及取卡",
+          "text": "可通过交我办App中的校园卡自助办卡服务预约，持六位预约码在自助机领取，不需要校园卡密码。页面列出的取卡点包括闵行及徐汇网络信息中心、闵行学生中心大楼。\n也可直接在自助机选择补办，通过学工号及卡密码、身份证及卡密码，或交我办扫码完成身份验证。此摘要不执行真实补卡，办理以来源页面为准。",
+          "source_path": "SJ01_card_replace.md",
+          "score": 0.2162,
+          "vector_score": 0.1771,
+          "lexical_score": 0.28
+        },
+        {
+          "chunk_id": "SJ02-C01",
+          "source_id": "SJ02",
+          "title": "上海交通大学校园卡挂失与解挂摘要",
+          "topic": "校园卡",
+          "section": "线上途径",
+          "text": "在上海交通大学交我办PC版，可进入信息服务下的校园卡查询和挂失服务。手机端可在交我办App的信息服务中打开我的校园卡，办理挂失或解挂。",
+          "source_path": "SJ02_card_lost.md",
+          "score": 0.1875,
+          "vector_score": 0.2043,
+          "lexical_score": 0.16
+        },
+        {
+          "chunk_id": "SJ04-C01",
+          "source_id": "SJ04",
+          "title": "上海交通大学校园卡余额及消费明细摘要",
+          "topic": "校园卡",
+          "section": "手机与网页查询",
+          "text": "上海交通大学用户可在交我办App的信息服务中查看我的校园卡。PC版既可从个人信息资源中的卡码资源进入，也可从信息服务的校园卡查询入口进入。",
+          "source_path": "SJ04_card_balance.md",
+          "score": 0.1738,
+          "vector_score": 0.1823,
+          "lexical_score": 0.16
+        },
+        {
+          "chunk_id": "SJ09-C02",
+          "source_id": "SJ09",
+          "title": "上海交通大学本科生缓考办法摘要",
+          "topic": "教务",
+          "section": "审批与特殊情况",
+          "text": "院系教学秘书审核后由教务处审批。确因突发事件不能提前办理时，应在考试期间报告辅导员或教学秘书并获批准，由其在考试结束前报教务处代办。通过审批后原则上不能撤销。通选课、重修免修考及过程性考试不在适用范围；其余条件请核对原办法。",
+          "source_path": "SJ09_exam_deferral.md",
+          "score": 0.1455,
+          "vector_score": 0.1611,
+          "lexical_score": 0.12
+        }
+      ]
+    }
+  ],
+  "top1_failures": [
+    "SJQ04",
+    "SJQ10"
+  ],
+  "semantic_comparison": "not_run"
+}

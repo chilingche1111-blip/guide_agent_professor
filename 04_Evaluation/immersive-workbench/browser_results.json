@@ -1,0 +1,84 @@
+{
+  "executed_at": "2026-10-01T09:11:43.041Z",
+  "scope": "Isolated Playwright browser; no live LLM credentials",
+  "live_web_requested": false,
+  "checks": [
+    {
+      "name": "12 built-in knowledge documents loaded",
+      "passed": true
+    },
+    {
+      "name": "SSE chat completes with grounded answer",
+      "passed": true
+    },
+    {
+      "name": "Citations and tool trace panel",
+      "passed": true
+    },
+    {
+      "name": "Conversation restored after page reload",
+      "passed": true
+    },
+    {
+      "name": "Conversation rename",
+      "passed": true
+    },
+    {
+      "name": "Markdown export",
+      "passed": true
+    },
+    {
+      "name": "Status tool arguments remembered across three turns",
+      "passed": true
+    },
+    {
+      "name": "Knowledge full-text filtering and empty state",
+      "passed": true
+    },
+    {
+      "name": "Knowledge upload and XSS-safe document viewer",
+      "passed": true
+    },
+    {
+      "name": "User upload deletion",
+      "passed": true
+    },
+    {
+      "name": "Provider presets and protocol fields",
+      "passed": true
+    },
+    {
+      "name": "Eight working service shortcuts",
+      "passed": true
+    },
+    {
+      "name": "Dark theme",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 375px",
+      "passed": true
+    },
+    {
+      "name": "Mobile navigation and Escape dialog dismissal",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 768px",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 1024px",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 1440px",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "executed_at": "2026-10-01T11:26:18.149Z",
+  "checks": [
+    "Source-relative layout keeps library/teaching/clinic quadrants, two sports grounds and 23 dorm blocks across three communities",
+    "Three online services have no invented map coordinates and official map source is linked",
+    "North-up plan control and desktop map labels avoid overlap",
+    "Eastern dorm cluster retains its clicked position and does not use a western community photo",
+    "Static scene stops rendering after camera settles",
+    "390px selected panel does not overlap source/rail and Agent action is reachable",
+    "Self-hosted Chinese display font loads",
+    "No uncaught JavaScript errors"
+  ],
+  "errors": [],
+  "source": "https://xfjy.chd.edu.cn/info/1024/12168.htm",
+  "source_map_version": "2023",
+  "not_gps": true
+}

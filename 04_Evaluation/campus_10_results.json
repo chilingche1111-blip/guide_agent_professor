@@ -1,0 +1,15 @@
+{
+  "executed_at": "2026-10-01T10:37:57.836Z",
+  "checks": [
+    "Ten destinations have model geometry, projected labels and directory buttons",
+    "All six new locations support alias search, detail panels and honest availability",
+    "New location carries its own question to CHD assistant without automatic submission",
+    "375px directory scrolls to all ten destinations without page overflow",
+    "All destination buttons and new search work without WebGL",
+    "No uncaught JavaScript errors"
+  ],
+  "errors": [],
+  "locations": 10,
+  "real_geography": false,
+  "new_business_integrations": false
+}

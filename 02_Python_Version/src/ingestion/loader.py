@@ -20,7 +20,10 @@ class Document:
 def _frontmatter(text: str) -> tuple[dict[str, str], str]:
     if not text.startswith("---\n"):
         return {}, text
-    _, raw_meta, body = text.split("---", 2)
+    parts = text.split("---", 2)
+    if len(parts) != 3:
+        return {}, text
+    _, raw_meta, body = parts
     metadata: dict[str, str] = {}
     for line in raw_meta.strip().splitlines():
         if ":" in line:

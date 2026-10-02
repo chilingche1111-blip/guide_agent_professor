@@ -1,0 +1,24 @@
+{
+  "executed_at": "2026-10-01T11:26:37.671Z",
+  "checks": [
+    "Official CHD campus photo loads with visible original source link",
+    "Three CHD photographic districts switch real images, captions and prepared camera contexts",
+    "Full-screen directory contains ten working destinations; Escape dismisses it",
+    "Opening curtain reveals live map and removes hidden intro from focus order",
+    "All four chapters synchronize camera preset, active chapter and service directory",
+    "Chapter controls support arrow-key navigation",
+    "Photographic and 3D views preserve the same learning district",
+    "Verified service photos use exact captions; unverified transit has no substituted photograph",
+    "Cross-chapter search and sequential ten-place exploration work with honest source gaps",
+    "Destination hands its draft to CHD Agent without sending; return preserves selected place",
+    "Day/night map and reversible opening state work",
+    "390px opening, directory, selected place and Agent action have no horizontal overflow",
+    "Real camera interpolation runs when reduced motion is off",
+    "No-WebGL fallback retains full directory and place details",
+    "No uncaught JavaScript errors"
+  ],
+  "errors": [],
+  "official_background": true,
+  "layout_source": "Official CHD Ver.2023 map, approximate layout, not GPS",
+  "coze": false
+}

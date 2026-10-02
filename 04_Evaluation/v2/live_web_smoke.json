@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "sources": [
+    {
+      "source_id": "W1",
+      "title": "Welcome to Python.org",
+      "text": "Python knows the usual control flow statements that other languages speak — if, for, while and range — with some of its own twists, of course. More control flow tools in Python 3",
+      "url": "https://www.python.org/",
+      "source_type": "web",
+      "retrieved_at": "2026-10-01T08:23:31+00:00",
+      "provider": "Bing RSS · 个人非商业实验"
+    },
+    {
+      "source_id": "W2",
+      "title": "Download Python | Python.org",
+      "text": "Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum in the Netherlands as a successor of a language called ABC. Guido remains Python’s principal author, although it includes many contributions from others.",
+      "url": "https://www.python.org/downloads/",
+      "source_type": "web",
+      "retrieved_at": "2026-10-01T08:23:31+00:00",
+      "provider": "Bing RSS · 个人非商业实验"
+    },
+    {
+      "source_id": "W3",
+      "title": "欢迎来到 Python.org - Python 编程语言",
+      "text": "直观的解释 使用 Python 进行计算非常简单，表达式语法也很直观：运算符 + 、 - 、 * 和 / 的作用符合预期；括号 () 可用于分组。 更多关于 Python 3 中简单数学函数的内容。",
+      "url": "https://pythonlang.cn/",
+      "source_type": "web",
+      "retrieved_at": "2026-10-01T08:23:31+00:00",
+      "provider": "Bing RSS · 个人非商业实验"
+    },
+    {
+      "source_id": "W4",
+      "title": "Python 基础教程 | 菜鸟教程",
+      "text": "Python 基础教程 Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。 Python 由 Guido van Rossum 于 1989 年底发明，第一个公开发行版发行于 1991 年。 像 Perl 语言一样, Python 源代码同样遵循 GPL (GNU General Public License) 协议。",
+      "url": "https://www.runoob.com/python/python-tutorial.html",
+      "source_type": "web",
+      "retrieved_at": "2026-10-01T08:23:31+00:00",
+      "provider": "Bing RSS · 个人非商业实验"
+    },
+    {
+      "source_id": "W5",
+      "title": "Python（计算机编程语言）_百度百科",
+      "text": "Python 是一种高级、通用、解释型开源编程语言，由 Guido van Rossum 于 1991 年首次发布，现由 Python 软件基金会维护，可跨平台运行。主要功能：核心为通用编程：覆盖网站后端、数据分析、人工智能与自动化脚本；设计强调代码可读性，便于协作维护；内置标准库并依托第三方包生态，多平台复用代码 ...",
+      "url": "https://baike.baidu.com/item/Python/407313",
+      "source_type": "web",
+      "retrieved_at": "2026-10-01T08:23:31+00:00",
+      "provider": "Bing RSS · 个人非商业实验"
+    }
+  ],
+  "note": "Public search snippets only, no external LLM used. Search relevance is not comprehensively evaluated.",
+  "executed_at": "2026-10-01T08:23:28+00:00",
+  "query": "Python official documentation",
+  "elapsed_seconds": 2.701
+}
